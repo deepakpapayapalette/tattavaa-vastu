@@ -1,0 +1,21 @@
+header  nav a, header  nav span{
+    color: #808080;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+header {
+    padding: 10px 0;
+}
+header .login-btn button {
+    border: 1px solid #cda202;
+    background: none;
+    color: #cda202;
+}
+/* import Lora font form assets fonts folder */
+@font-face {
+    font-family: 'Lora';
+    src: url('../../assets/fonts/lora.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
