@@ -11,3 +11,7 @@ section p{
     padding: 10px 20px;
     border-radius: 10px;
 } */
+
+.text-lora{
+    font-family: "Lora", sans-serif;
+}

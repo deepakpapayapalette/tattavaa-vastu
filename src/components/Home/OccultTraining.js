@@ -7,6 +7,7 @@ import astrologer from '../../assets/images/astrologer.png';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import AstrologerCard from '../UI/AstrologerCard';
+import OccultTrainingSlider from '../Sliders/OccultTrainingSlider';
 // import AstrologerCard from '../UI/AstrologerCard';
 
 
@@ -59,7 +60,7 @@ const OccultTraining = () => {
             </div>
 
           <div className="row">  
-                <AstrologerCard filteredCards={filteredCards}  />
+                <OccultTrainingSlider filteredData={filteredCards}  />
           </div> 
         </div>
     </section>

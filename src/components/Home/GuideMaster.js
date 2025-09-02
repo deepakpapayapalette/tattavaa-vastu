@@ -7,6 +7,7 @@ import astrologer from '../../assets/images/astrologer.png';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import AstrologerCard from '../UI/AstrologerCard';
+import GuidedMasterCard from '../UI/GuidedMasterCard';
 // import AstrologerCard from '../UI/AstrologerCard';
 
 

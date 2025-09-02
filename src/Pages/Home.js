@@ -6,6 +6,7 @@ import GuideMaster from '../components/Home/GuideMaster'
 import OccultClinic from '../components/Home/OccultClinic'
 import FortuneBasket from '../components/Home/FortuneBasket'
 import OccultTraining from '../components/Home/OccultTraining'
+import ResidentialVastu from '../components/Home/ResidentialVastu'
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
      <OccultClinic />
      <FortuneBasket />
      <OccultTraining />
+     <ResidentialVastu />
 
 
     </>

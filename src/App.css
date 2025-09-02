@@ -2,7 +2,7 @@
 
 :root{
   --primary-color: #CDA202;
-  --secondary-color: #faf6e6;
+  /* --secondary-color: #faf6e6; */
   /* --font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; */
 }
 
@@ -27,13 +27,22 @@ body,html{
 .space-top{
   padding-top: 100px;
 }
+.margin-before{
+  margin-top: 100px;
+}
 @media screen and (max-width:992px) {
     .space-top{
     padding-top: 60px;
   } 
+  .margin-before{
+  margin-top: 60px;
+}
 }
 @media screen and (max-width:768px) {
     .space-top{
     padding-top: 60px;
   } 
+  .margin-before{
+  margin-top: 40px;
+}
 }

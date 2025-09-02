@@ -84,7 +84,7 @@ export const OccultClinicData = [
         id: 1,
         img: OccultClinicImage,
       category: "Vedic Astrologer",
-      img: OccultClinicImage,
+    
          title: "7 Mukhi Rudraksha ",
       desc:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est incidunt fuga odit recusandae aliquid aut nostrum placeat exercitationem, laborum quidem quasi. Vero quibusdam ullam numquam reiciendis porro, omnis consequuntur adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, voluptatem quis fugit labore velit ex doloremque, adipisci, voluptate illum iste modi. Rem molestias ab harum sint beatae error aliquam dolorum. '
     },

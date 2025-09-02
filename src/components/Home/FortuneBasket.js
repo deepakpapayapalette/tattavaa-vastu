@@ -7,6 +7,9 @@ import astrologer from '../../assets/images/astrologer.png';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import AstrologerCard from '../UI/AstrologerCard';
+import FortuneBasketCard from '../UI/OccultTrainingCard';
+import OccultTrainingCard from '../UI/OccultTrainingCard';
+import FortuneBasketSlider from '../Sliders/FortuneBasketSlider';
 // import AstrologerCard from '../UI/AstrologerCard';
 
 
@@ -59,7 +62,8 @@ const FortuneBasket = () => {
             </div>
 
           <div className="row">  
-                <AstrologerCard filteredCards={filteredCards}  />
+                <FortuneBasketSlider filteredData={filteredCards} />
+                {/* <OccultTrainingCard/> */}
           </div> 
         </div>
     </section>

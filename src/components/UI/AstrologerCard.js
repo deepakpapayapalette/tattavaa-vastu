@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from 'react-multi-carousel';
 import astrologer from '../../assets/images/astrologer.png';
 
-export default function AstrologerCard({filteredCards}) {
+export default function AstrologerCard({filteredCards, OccultTrainingCard}) {
        const responsive = {
         superLargeDesktop: {
             breakpoint: { max: 4000, min: 3000 },
@@ -69,9 +69,7 @@ export default function AstrologerCard({filteredCards}) {
                                     <p className="text-sm text-gray-600 mt-1">
                                         7+ Year Of Experience
                                     </p>
-                                    {/* <div>
-                                        {item.category}
-                                    </div> */}
+                           
                                 </div>
                                 <div className="">
                                     <button className="py-3 px-4 text-[18px] w-full main-bg hover:shadow-md text-white font-medium   rounded-lg transition"
@@ -81,6 +79,7 @@ export default function AstrologerCard({filteredCards}) {
                                     </button>
                                 </div>
                             </div>
+                            {OccultTrainingCard}
                         </div>
                         )
                     })} 
