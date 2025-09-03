@@ -1,0 +1,37 @@
+.footer-section {
+  background: #f5eccc;
+  color: #000;
+}
+
+.footer-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #8a6e00; /* mustard brown */
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  background: #000;
+  color: #fff;
+}
+
+.footer-bottom {
+  background: #6b5700; /* dark brown */
+  color: #fff;
+}

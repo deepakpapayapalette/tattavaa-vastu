@@ -11,6 +11,7 @@ header .login-btn button {
     border: 1px solid #cda202;
     background: none;
     color: #cda202;
+    padding: 9px 6px;
 }
 /* import Lora font form assets fonts folder */
 @font-face {

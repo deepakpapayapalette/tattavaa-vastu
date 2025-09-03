@@ -1,0 +1,129 @@
+
+
+:root {
+  /* tweak this to match your brand (close to reference image) */
+  --tv-yellow: #caa105;
+}
+
+/* wrapper controls the overall size/alignment */
+.tv-wrap {
+position: relative;
+    padding: 30px 0;
+    padding-right: 10px;
+}
+
+/* yellow speech-bubble block behind the card */
+.tv-yellow {
+position: absolute;
+    left: 27px;
+    top: 0px;
+    bottom: 55px;
+    min-width: 334px;
+    background: var(--tv-yellow);
+    border-radius: 8px;
+    z-index: 0;
+        min-height: 243px;
+}
+
+/* yellow tail (bottom-right of the yellow block) */
+.tv-yellow::after {
+  content: "";
+  position: absolute;
+  right: 36px;             /* tail position (from right edge of yellow) */
+  bottom: -16px;
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 18px solid var(--tv-yellow);
+  filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.08));
+}
+
+/* white card on top */
+.tv-card {
+  position: relative;
+  z-index: 1;
+  margin-left: 56px;      /* overlap amount so yellow shows on the left */
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.06);
+  padding: 18px 22px;
+  min-height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* text styling */
+.tv-quote {
+  margin: 0 0 14px 0;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.tv-client {
+  margin-top: 2px;
+}
+
+.tv-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0b0b0b;
+  margin: 0 0 3px 0;
+}
+
+.tv-loc {
+  font-size: 13px;
+  color: #666;
+}
+
+/* responsive niceties */
+@media (max-width: 425px) {
+  
+
+}
+@media (max-width: 768px) {
+  .tv-yellow {
+    /* width: 10px;
+     */
+     bottom: 20px;
+         top: 18px;
+
+  }
+  .tv-card {
+    margin-left: 38px;
+    padding: 16px 18px;
+  }
+}
+.testimonial-section .slick-slider .slick-prev:before, .testimonial-section .slick-slider .slick-next:before{
+  color: #cda202;
+  font-size: 40px;
+  margin-top: -50px;
+}
+.testimonial-section .slick-slider .slick-prev, .testimonial-section .slick-slider .slick-next{
+  /* margin-top: -7%; */
+}
+.tv-card2{
+    position: relative;
+    z-index: 1;
+    margin-left: 30px;
+    background: #ffffff;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    /* box-shadow: 0 2px 7px rgba(0, 0, 0, 0.06); */
+    padding: 18px 22px;
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tv-card-bg {
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    padding-top: 30px;
+    padding-right: 10px;
+}

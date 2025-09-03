@@ -1,17 +1,18 @@
-import React from "react";
+// import React from "react";
 import Carousel from 'react-multi-carousel';
-import astrologer from '../../assets/images/astrologer.png';
+// import astrologer from '../../assets/images/astrologer.png';
 
 export default function AstrologerCard({filteredCards, OccultTrainingCard}) {
        const responsive = {
         superLargeDesktop: {
             breakpoint: { max: 4000, min: 3000 },
-            items: 3
+            items: 3,
         },
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
             items: 3, 
-             partialVisibilityGutter: 20
+             partialVisibilityGutter: 20,
+             dots: false,
         },
         tablet: {
             breakpoint: { max: 1024, min: 767 },
@@ -37,9 +38,9 @@ export default function AstrologerCard({filteredCards, OccultTrainingCard}) {
                 //  centerMode={false}
                 containerClass=" carousel-container" 
                 itemClass="pe-md-4 px-1"  
-                showDots={true}
+                showDots={false}
                 infinite={true}  
-                renderDotsOutside={true} 
+                renderDotsOutside={false} 
                 partialVisible={true} 
                 className='ps-0'
                 >

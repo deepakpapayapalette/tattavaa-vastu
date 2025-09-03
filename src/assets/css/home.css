@@ -1,6 +1,9 @@
 .main-bg{
   background-color: #CDA202;
 }
+.main-color{
+  color: #CDA202;
+}
 .second-bg{
   background-color: #faf6e6;
 }
@@ -14,4 +17,42 @@ section p{
 
 .text-lora{
     font-family: "Lora", sans-serif;
+}
+.WristWatchAnalysis-section
+.WristWatchAnalysCard{
+  /* position: absolute; */
+    background: rgba(0,0,0,0.50);
+                        border-radius: 8px;
+                        border: 1px solid #3b3a39;
+padding: 30px 20px;
+}
+
+.Wrist-Watch-parent{
+  padding: 40px 20px;
+}
+@media screen and (max-width:992px) {
+  .WristWatchAnalysis-section .WristWatchAnalysCard{
+    border:none;  
+    /* background: none; */
+    padding: 20px;
+  }
+  .Wrist-Watch-parent{
+    padding: 0;
+  }
+  
+}
+.bg-layer1{
+  display: none;
+}
+
+@media screen and (min-width:768px) {
+  
+  /* .bg-layer1 {
+      width: 400px;
+      min-height: 400px;
+      left: -25px;
+      background-color: #eddda2;
+      bottom: -25px;
+      display: block;
+  } */
 }

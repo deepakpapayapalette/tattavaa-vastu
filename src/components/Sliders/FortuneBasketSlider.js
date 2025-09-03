@@ -36,7 +36,7 @@ const FortuneBasketSlider = ({filteredData}) => {
                       //  centerMode={false}
                       containerClass=" carousel-container" 
                       itemClass="pe-md-3 px-1"  
-                      showDots={true}
+                      showDots={false}
                       infinite={true}  
                       renderDotsOutside={true} 
                       partialVisible={true} 

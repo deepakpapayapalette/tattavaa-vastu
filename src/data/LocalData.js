@@ -1,6 +1,50 @@
 import OccultClinicImage from '../assets/images/OccultClinic.png'
 import GuideImg from '../assets/images/astrologer.png'
 import FortuneBasket from '../assets/images/FortuneBasket.png'
+import newsImage from '../assets/images/news1.png'
+
+
+export const heroSliderData=[
+  {
+  id:1,
+},
+{
+  id:2,
+},
+{
+  id:3,
+},
+{
+  id:4,
+},
+]
+export const newsArticleData=[
+  {
+  id:1,
+    img: newsImage,
+},
+{
+  id:2,
+      img: newsImage,
+},
+{
+  id:3,
+      img: newsImage,
+},
+{
+  id:4,
+      img: newsImage,
+},
+{
+  id:5,
+      img: newsImage,
+},
+{
+  id:6,
+      img: newsImage,
+},
+]
+
 export const cardsData = [
    {
         id: 1,
@@ -258,3 +302,20 @@ export const FortuneBasketData = [
       desc:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est incidunt fuga odit recusandae aliquid aut nostrum placeat exercitationem, laborum quidem quasi. Vero quibusdam ullam numquam reiciendis porro, omnis consequuntur adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, voluptatem quis fugit labore velit ex doloremque, adipisci, voluptate illum iste modi. Rem molestias ab harum sint beatae error aliquam dolorum. '
     }
 ]
+export const testimonialsData = [
+  {
+    text: `""After implementing Triangle Vastuu's advice, our home feels so much more peaceful. Relationships have improved, and we've experienced a noticeable increase in well-being." - A satisfied client from Mumbai."`,
+    client: "Client Name",
+    location: "Mumbai, India",
+  },
+  {
+    text: `"After implementing Triangle Vastuu's advice, our home feels so much more peaceful. Relationships have improved, and we've experienced a noticeable increase in well-being." - A satisfied client from Mumbai."`,
+    client: "Another Client",
+    location: "Delhi, India",
+  },
+  {
+    text: `"After implementing Triangle Vastuu's advice, our home feels so much more peaceful. Relationships have improved, and we've experienced a noticeable increase in well-being." - A satisfied client from Mumbai."`,
+    client: "Business Owner",
+    location: "Pune, India",
+  },
+];

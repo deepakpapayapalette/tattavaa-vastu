@@ -26,7 +26,7 @@ const GuideMaster = () => {
 
   return (
     <> 
-    <section className='space-top'> 
+    <section className='space-top relative'> 
         <div className="container">
                 <div className="row">
                     <div className="col-lg-9 col-12 mb-3 mb-lg-0">

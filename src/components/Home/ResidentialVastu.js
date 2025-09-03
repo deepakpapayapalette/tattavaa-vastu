@@ -9,12 +9,14 @@ const ResidentialVastu = () => {
         {/* Left Image */}
         <div className="col-lg-6 col-12">
           {/* Decorative background square */}
-          {/* <div className="absolute -left-6 top-6 w-full h-full bg-[#e9dec2] z-0"></div> */}
+          <div className="relative"> 
+          <div className="absolute z-0 bg-layer1 "></div>
           <img
             src={ResidentialVastuImage}
             alt="Residential Vastu"
-            className="relative z-10 w-full h-auto object-cover shadow-lg"
+            className="relative z-10 w-full h-auto object-cover "
           />
+          </div>
         </div>
 
         {/* Right Content */}
@@ -31,7 +33,9 @@ const ResidentialVastu = () => {
             providing solutions without requiring major structural changes.
           </p>
 
-          <button className="px-6 py-2 border border-[#f3c76d] bg-[#fdf6e6] text-gray-900 font-medium rounded-md hover:bg-[#f3c76d] hover:text-white transition-all duration-300">
+          <button className="px-8 py-3 text-[#cda202] text-lora   text-[18px] rounded-md hover:bg-[#cda202] hover:text-white transition-all duration-300"
+            style={{border:'1px solid #cda202'}}
+            >
             Contact Now
           </button>
         </div>
