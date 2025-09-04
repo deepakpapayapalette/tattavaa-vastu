@@ -26,7 +26,7 @@ const Footer = () => {
             />
             <p className="text-dark small">
               Ready to embrace positivity and prosperity? Triangle Vastu offers
-              easy online and onsite consultations, tailored for your
+              easy online and onsite consultations, tailored for your.
             </p>
           </div>
 
