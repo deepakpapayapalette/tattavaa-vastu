@@ -1,21 +1,24 @@
 import React from 'react'
+import OurStory from '../components/About/OurStory'
+import AboutSection2 from '../components/About/AboutSection2'
+import MeetExperts from '../components/About/MeetExperts'
 
 const About = () => {
   return (
     <>
-      <section>
-                <video src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" 
-        className=""
-        autoPlay
-        loop
-        controls
-        playsInline
-      >
-        {/* <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" /> */}
-  
-      </video>
- 
+      <section className='space-top'>
+        <div className="container">
+          <div className="about-title">
+            <h2 className='text-lora font-semibold'>
+                About Us
+            </h2>
+            <p>Blending ancient occult sciences with modern guidance to bring clarity, balance, and prosperity into everyday life.</p>
+            </div>
+        </div> 
       </section>
+      <OurStory/>
+      <AboutSection2/>
+      <MeetExperts/>
     </>
   )
 }

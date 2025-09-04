@@ -8,6 +8,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import AstrologerCard from '../UI/AstrologerCard';
 import GuidedMasterCard from '../UI/GuidedMasterCard';
+import GuideMasterSlider from '../Sliders/GuideMasterSlider';
 // import AstrologerCard from '../UI/AstrologerCard';
 
 
@@ -30,7 +31,7 @@ const GuideMaster = () => {
         <div className="container">
                 <div className="row">
                     <div className="col-lg-9 col-12 mb-3 mb-lg-0">
-                        <h2 className="fw-semibold ">Guided by the Masters</h2>
+                        <h2 className="fw-semibold text-lora ">Guided by the Masters</h2>
                         <p className="light-color">
                             Connect with seasoned astrologers and numerology experts who translate the cosmic language into practical wisdom for your success and harmony.
                         </p>
@@ -60,7 +61,7 @@ const GuideMaster = () => {
             </div>
 
           <div className="row">  
-                <AstrologerCard filteredCards={filteredCards}  />
+                <GuideMasterSlider GuideMasterArray={filteredCards}  />
           </div> 
         </div>
     </section>

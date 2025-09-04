@@ -7,6 +7,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 // import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import AstrologerCard from '../UI/AstrologerCard';
+import OccultClinicSlider from '../Sliders/OccultClinicSlider';
 // import AstrologerCard from '../UI/AstrologerCard';
 
 
@@ -29,7 +30,7 @@ const OccultClinic = () => {
         <div className="container">
                 <div className="row">
                     <div className="col-lg-9 col-12 mb-3 mb-lg-0">
-                        <h2 className="fw-semibold ">Online Occult Clinic</h2>
+                        <h2 className="fw-semibold text-lora">Online Occult Clinic</h2>
                         <p className="light-color">
                             Step into a live cosmic session—speak directly with our experts and uncover clarity, fortune, and balance.
                         </p>
@@ -59,7 +60,7 @@ const OccultClinic = () => {
             </div>
 
           <div className="row">  
-                <AstrologerCard filteredCards={filteredCards}  />
+                <OccultClinicSlider filteredCards={filteredCards}  />
           </div> 
         </div>
     </section>

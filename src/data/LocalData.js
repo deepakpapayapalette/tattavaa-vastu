@@ -2,6 +2,16 @@ import OccultClinicImage from '../assets/images/OccultClinic.png'
 import GuideImg from '../assets/images/astrologer.png'
 import FortuneBasket from '../assets/images/FortuneBasket.png'
 import newsImage from '../assets/images/news1.png'
+import service1 from '../assets/images/services/service1.png'
+import service2 from '../assets/images/services/service2.png'
+import service3 from '../assets/images/services/service3.png'
+import service4 from '../assets/images/services/service4.png'
+import service5 from '../assets/images/services/service5.png'
+import service6 from '../assets/images/services/service6.png'
+import service7 from '../assets/images/services/service7.png'
+import service8 from '../assets/images/services/service8.png'
+import service9 from '../assets/images/services/service9.png'
+import service10 from '../assets/images/services/service10.png'
 
 
 export const heroSliderData=[
@@ -44,7 +54,6 @@ export const newsArticleData=[
       img: newsImage,
 },
 ]
-
 export const cardsData = [
    {
         id: 1,
@@ -319,3 +328,105 @@ export const testimonialsData = [
     location: "Pune, India",
   },
 ];
+export const MeetExpertsData = [
+  {
+    id: 1,
+  },
+  {
+    id: 2,
+  },
+  {
+    id: 3,
+  },
+  {
+    id: 4,
+  },
+  {
+    id: 5,
+  },
+  {
+    id: 6,
+  },
+  {
+    id: 7,
+  },
+  {
+    id: 8,
+  },
+    {
+    id: 9,
+  },
+  {
+    id: 10,
+  },
+  {
+    id: 11,
+  },
+  {
+    id: 12,
+  },
+  {
+    id: 13,
+  },
+  {
+    id: 14,
+  },
+  {
+    id: 15,
+  },
+  {
+    id: 16,
+  },
+]
+export const servicesData = [
+{
+    id: 1,
+    img: service1,
+    title: "Vastu For Home",
+  },
+  {
+    id: 2,
+    img: service2,
+       title: "Vastu For Office",
+  },
+  {
+    id: 3,
+    img: service3,
+       title: "Vastu For Business",
+  },
+  {
+    id: 4,
+    img: service4,
+    title: 'Vastu For Factory',
+  },
+  {
+    id: 5,
+    img: service5,
+    title: "Numerology (Name, Business & Mobile)",
+  },
+  {
+    id: 6,
+    img: service6,
+    title: 'Aroma Vastu',
+  },
+  {
+    id: 7,
+    img: service7,
+    title: 'Wrist Watch Analysis',
+  },
+  {
+    id: 8,
+    img: service8,
+    title: "Crystal Therapy",
+  },
+    {
+      id: 9,
+      img: service9,
+      title: 'Rudraksh Therapy',
+  },
+    {
+      id: 10,
+      img: service10,
+      title: 'Color Therapy',
+  },
+]

@@ -30,7 +30,7 @@ const OccultTraining = () => {
         <div className="container">
                 <div className="row">
                     <div className="col-lg-9 col-12 mb-3 mb-lg-0">
-                        <h2 className="fw-semibold ">Occult Training Program & Enrolment</h2>
+                        <h2 className="fw-semibold text-lora">Occult Training Program & Enrolment</h2>
                         <p className="light-color">
                             Learn astrology, numerology, and occult sciences from expert practitioners. Enrol now to master ancient wisdom and apply it in modern life.
                         </p>

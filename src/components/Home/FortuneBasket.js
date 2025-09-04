@@ -32,7 +32,7 @@ const FortuneBasket = () => {
         <div className="container">
                 <div className="row">
                     <div className="col-lg-9 col-12 mb-3 mb-lg-0">
-                        <h2 className="fw-semibold ">Your Fortune Basket</h2>
+                        <h2 className="fw-semibold text-lora">Your Fortune Basket</h2>
                         <p className="light-color">
                             Your Fortune Basket A collection of personalised remedies, reports, and tools aligned with your cosmic journey.
                         </p>
@@ -44,7 +44,7 @@ const FortuneBasket = () => {
                         </button>
                     </div>
                 </div> 
-            <div className="row">
+            {/* <div className="row">
                 <div className="col-12 d-flex ">
                     <div className=" medical-tab-buttons mb-4 flex flex-wrap gap-3"> 
                          {categories.map((cat) => (
@@ -59,7 +59,7 @@ const FortuneBasket = () => {
 
                     </div>
                 </div> 
-            </div>
+            </div> */}
 
           <div className="row">  
                 <FortuneBasketSlider filteredData={filteredCards} />

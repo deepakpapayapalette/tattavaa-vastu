@@ -28,10 +28,10 @@ export default function VastuAstrology() {
               style={{ backgroundColor: "#faf6e6" }}
             >
               <div className="pe-3">
-                <h5 className="fw-semibold text-dark text-lora">
+                <h4 className="fw-semibold  text-lora">
                   Integrate Cosmic Blueprints
-                </h5>
-                <p className="text-muted mb-0">
+                </h4>
+                <p className="text-[#32312e] mb-0">
                   Harmonise your birth chart and planetary positions with your
                   spatial design for holistic balance.
                 </p>
@@ -57,8 +57,8 @@ export default function VastuAstrology() {
               style={{ backgroundColor: "#faf6e6" }}
             >
               <div className="pe-3">
-                <h5 className="fw-semibold text-dark text-lora">Environment & Destiny</h5>
-                <p className="text-muted mb-0">
+                <h4 className="fw-semibold  text-lora">Environment & Destiny</h4>
+                <p className="text-[#32312e] mb-0">
                   Personalised remedies that align your environment with your
                   unique cosmic blueprint, enhancing fortune and clarity.
                 </p>

@@ -1,52 +1,59 @@
-.main-bg{
+.main-bg {
   background-color: #CDA202;
 }
-.main-color{
+
+.main-color {
   color: #CDA202;
 }
-.second-bg{
+
+.second-bg {
   background-color: #faf6e6;
 }
-section p{
-    font-size: 18px;
+
+section p {
+  font-size: 18px;
 }
+
 /* .cutom-tab-style{
     padding: 10px 20px;
     border-radius: 10px;
 } */
 
-.text-lora{
-    font-family: "Lora", sans-serif;
-}
-.WristWatchAnalysis-section
-.WristWatchAnalysCard{
-  /* position: absolute; */
-    background: rgba(0,0,0,0.50);
-                        border-radius: 8px;
-                        border: 1px solid #3b3a39;
-padding: 30px 20px;
+.text-lora {
+  font-family: "Lora", sans-serif;
 }
 
-.Wrist-Watch-parent{
+.WristWatchAnalysis-section .WristWatchAnalysCard {
+  /* position: absolute; */
+  background: rgba(0, 0, 0, 0.50);
+  border-radius: 8px;
+  border: 1px solid #3b3a39;
+  padding: 30px 20px;
+}
+
+.Wrist-Watch-parent {
   padding: 40px 20px;
 }
+
 @media screen and (max-width:992px) {
-  .WristWatchAnalysis-section .WristWatchAnalysCard{
-    border:none;  
+  .WristWatchAnalysis-section .WristWatchAnalysCard {
+    border: none;
     /* background: none; */
     padding: 20px;
   }
-  .Wrist-Watch-parent{
+
+  .Wrist-Watch-parent {
     padding: 0;
   }
-  
+
 }
-.bg-layer1{
+
+.bg-layer1 {
   display: none;
 }
 
 @media screen and (min-width:768px) {
-  
+
   /* .bg-layer1 {
       width: 400px;
       min-height: 400px;
@@ -55,4 +62,19 @@ padding: 30px 20px;
       bottom: -25px;
       display: block;
   } */
+}
+
+.ab-meet-experts-card {
+  position: relative;
+  overflow: hidden;
+
+}
+
+.ab-meet-experts-card:hover img {
+  transform: scale(1.08);
+
+}
+
+.ab-meet-experts-card img {
+  transition: all .5s ease-in-out;
 }

@@ -10,7 +10,7 @@ export default function VastuGuides() {
   return (
       <section className="space-top">
           <div className="container">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-1" style={{ fontFamily: 'Lora, serif' }}>
+              <h2 className="font-semibold  mb-1 text-lora">
                   Meet Your Vastu Guides:
                 Priyanka Solanki &
                 Shalini G Pandey

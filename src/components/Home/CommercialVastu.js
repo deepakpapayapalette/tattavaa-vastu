@@ -8,7 +8,7 @@ const CommercialVastu = () => {
             <div className="row g-4 flex flex-col-reverse lg:flex-row items-end ">
                 <div className="col-lg-6 col-12">
                       <div className="bg-[#faf6e6] p-[36px] rounded-[10px]" >
-                          <h2 className="text-2xl md:text-4xl text-lora font-bold text-gray-900  mb-2 ">
+                          <h2 className="text-lora font-semibold  mb-2 ">
                               Commercial & Industrial Vastu: <br className="hidden md:block" />
                               Boost Success & Productivity
                           </h2>

@@ -18,15 +18,14 @@ export default function WristWatchAnalysis() {
                       >
                           <div className="col-lg-5"></div>
                           <div className="col-lg-7">
-                              <div className="  Wrist-Watch-parent" >
+                              <div className="Wrist-Watch-parent" >
                                   <div
-                                      className="  text-white  WristWatchAnalysCard"
-
+                                      className="text-white  WristWatchAnalysCard" 
                                   >
-                                      <h3 className="font-semibold mb-3">
+                                      <h3 className="font-semibold mb-3 text-white text-lora">
                                           Wrist Watch Analysis: Time & Energy Alignment
                                       </h3>
-                                      <p className="mb-4" style={{ fontSize: "0.95rem", lineHeight: "1.6" }}>
+                                      <p className="mb-4 text-white" style={{ fontSize: "0.95rem", lineHeight: "1.6" }}>
                                           Our unique service delves into the numerology and energetic impact
                                           of your wristwatch. Understand how your timepiece influences your
                                           personal and professional life vibrations, often overlooked yet

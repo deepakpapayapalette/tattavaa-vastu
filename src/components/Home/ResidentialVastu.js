@@ -21,7 +21,7 @@ const ResidentialVastu = () => {
 
         {/* Right Content */}
         <div className="col-lg-6 col-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-4">
+          <h2 className="text-lora font-semibold mb-3">
             Residential Vastu: Create Your <br className="hidden md:block" /> 
             Sanctuary of Harmony
           </h2>

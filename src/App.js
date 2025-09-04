@@ -7,9 +7,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 // import Contact, { contactFormData } from './Pages/Contact';
 
 
-import AppLayout from './Layout/AppLayout';
-import Errorpage from './Layout/ErrorPage';
+import AppLayout from './AppLayout/AppLayout';
+import Errorpage from './AppLayout/ErrorPage';
 import Home from './Pages/Home';
+import About from './Pages/About';
+import Services from './Pages/Services';
 // import ServiceDetail from './Pages/ServiceInnerPages/ServiceDetail';
 // import { getApi } from './API/GetApi';
 // import { ProductDetail } from './Components/UI/ProductDetail';
@@ -28,15 +30,15 @@ function App() {
           element: <Home/>
        
         },
-        // {
-        //   path: '/about',
-        //   element: <About />
-        // },
-        // {
-        //   path: '/service',
-        //   element: <Service />,
-        //   loader: getApi
-        // },
+        {
+          path: '/about',
+          element: <About />
+        },
+        {
+          path: '/service',
+          element: <Services />,
+          // loader: getApi
+        },
         // {
         //   path: '/contact',
         //   element: <Contact />,

@@ -19,7 +19,7 @@ export default function RudrakshaHealing() {
         <div className="row g-4">
           {/* Card 1 */}
           <div className="col-12 col-md-4">
-            <div className=" border-0 bg-[#faf6e6] h-100  rounded-3">
+            <div className=" border-0 bg-[#faf6e6]  rounded-3">
               <div
                 className="p-3 font-semibold text-white text-lora text-[24px]"
                 style={{ backgroundColor: "#cda202", borderRadius: "0.5rem 0.5rem 0 0" }}
@@ -40,7 +40,7 @@ export default function RudrakshaHealing() {
 
           {/* Card 2 */}
           <div className="col-12 col-md-4">
-            <div className=" border-0 bg-[#faf6e6] h-100  rounded-3">
+            <div className=" border-0 bg-[#faf6e6]  rounded-3">
               <div
                 className="p-3 font-semibold text-white text-lora text-[24px]"
                 style={{ backgroundColor: "#cda202", borderRadius: "0.5rem 0.5rem 0 0" }}
@@ -61,7 +61,7 @@ export default function RudrakshaHealing() {
 
           {/* Card 3 */}
           <div className="col-12 col-md-4">
-            <div className="  border-0 bg-[#faf6e6] h-100 rounded-3">
+            <div className="  border-0 bg-[#faf6e6] rounded-3">
               <div
                 className="font-semibold p-3 text-white text-lora text-[24px]"
                 style={{ backgroundColor: "#cda202", borderRadius: "0.5rem 0.5rem 0 0" }}
