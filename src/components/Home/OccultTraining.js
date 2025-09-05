@@ -14,7 +14,7 @@ import OccultTrainingSlider from '../Sliders/OccultTrainingSlider';
 const OccultTraining = () => {
     
       const [activeCategory, setActiveCategory] = useState("Vedic Astrologer");
-      const filteredCards = activeCategory === "all" ? OccultClinicData : OccultClinicData.filter((card) => card.category === activeCategory); 
+    //   const filteredCards = activeCategory === "all" ? OccultClinicData : OccultClinicData.filter((card) => card.category === activeCategory); 
       
     const categories = [
     { key: "Vedic Astrologer", label: "Vedic Astrologer" },
@@ -43,7 +43,7 @@ const OccultTraining = () => {
                     </div>
                 </div> 
             <div className="row">
-                <div className="col-12 d-flex ">
+                {/* <div className="col-12 d-flex ">
                     <div className=" medical-tab-buttons mb-4 flex flex-wrap gap-3"> 
                          {categories.map((cat) => (
                             <button key={cat.key}
@@ -56,11 +56,11 @@ const OccultTraining = () => {
           ))}
 
                     </div>
-                </div> 
+                </div>  */}
             </div>
 
           <div className="row">  
-                <OccultTrainingSlider filteredData={filteredCards}  />
+                <OccultTrainingSlider filteredData={OccultClinicData}  />
           </div> 
         </div>
     </section>

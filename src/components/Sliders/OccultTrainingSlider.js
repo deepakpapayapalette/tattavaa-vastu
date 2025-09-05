@@ -8,7 +8,7 @@ const OccultTrainingSlider = ({filteredData}) => {
         },
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 4, 
+            items: 3, 
              partialVisibilityGutter: 20
         },
         tablet: {
@@ -46,7 +46,7 @@ const OccultTrainingSlider = ({filteredData}) => {
         {filteredData.map((item) => {
           return (
             <>
-              <div className="max-w-xs rounded-xl hover:border-gray-400 bg-[#faf6e6] p-[20px]">
+              <div className=" rounded-xl hover:border-gray-400 bg-[#faf6e6] p-[20px]">
                 <div className="relative">
                   <img
                     src={item.img}
