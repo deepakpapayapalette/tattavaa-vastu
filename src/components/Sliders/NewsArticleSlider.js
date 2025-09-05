@@ -1,7 +1,6 @@
 import Carousel from 'react-multi-carousel';
 
 export default function NewsArticleSlider({newsArticleData}){
-    console.log(newsArticleData);
             const responsive = {
         superLargeDesktop: {
             breakpoint: { max: 4000, min: 3000 },

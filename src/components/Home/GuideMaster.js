@@ -7,15 +7,16 @@ import astrologer from '../../assets/images/astrologer.png';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import AstrologerCard from '../UI/AstrologerCard';
-import GuidedMasterCard from '../UI/GuidedMasterCard';
+import GuidedMasterCard from '../UI/GuidedByMasterCard';
 import GuideMasterSlider from '../Sliders/GuideMasterSlider';
+import { NavLink } from 'react-router-dom';
 // import AstrologerCard from '../UI/AstrologerCard';
 
 
 const GuideMaster = () => {
     
       const [activeCategory, setActiveCategory] = useState("Vedic Astrologer");
-      const filteredCards = activeCategory === "all" ? cardsData : cardsData.filter((card) => card.category === activeCategory); 
+      const filteredCards =  cardsData.filter((card) => card.category === activeCategory); 
       
     const categories = [
     { key: "Vedic Astrologer", label: "Vedic Astrologer" },
@@ -37,9 +38,12 @@ const GuideMaster = () => {
                         </p>
                     </div>
                     <div className='col-lg-3 col-12 d-flex justify-content-lg-end'>
-                        <button className="btn mb-3 mb-lg-0 flex items-center" onClick={() => setActiveCategory("all")}
-                        >
+                        <button className="btn mb-3 mb-lg-0 flex items-center" 
+                          >
+                              <NavLink className="no-underline text-dark" to="/guided-by-masters">
+                                  
                          View All <FaArrowRightLong className='ms-2 d-inline'  />
+                              </NavLink>
                         </button>
                     </div>
                 </div> 
@@ -48,7 +52,7 @@ const GuideMaster = () => {
                     <div className=" medical-tab-buttons mb-4 flex flex-wrap gap-3"> 
                          {categories.map((cat) => (
                             <button key={cat.key}
-                            className={`cutom-tab-style py-[8px] px-[15px] rounded-lg text-[14px] ${activeCategory === cat.key ? "bg-[#faf6e6]" : ""}`}
+                            className={`cutom-tab-style py-[8px] px-[15px] rounded-lg text-[14px] ${activeCategory === cat.key ? "bg-[#cda202] text-white" : ""}`}
                             onClick={() => setActiveCategory(cat.key)}
                             style={{borderWidth: '1px', borderColor: '#CDA202'}}
                             >

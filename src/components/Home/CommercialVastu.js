@@ -5,7 +5,7 @@ const CommercialVastu = () => {
   return (
     <section className="bg-[#ffffff] space-top ">
         <div className="container">
-            <div className="row g-4 flex flex-col-reverse lg:flex-row items-end ">
+            <div className="row g-4 flex flex-col-reverse md:flex-row items-end ">
                 <div className="col-lg-6 col-12">
                       <div className="bg-[#faf6e6] p-[36px] rounded-[10px]" >
                           <h2 className="text-lora font-semibold  mb-2 ">

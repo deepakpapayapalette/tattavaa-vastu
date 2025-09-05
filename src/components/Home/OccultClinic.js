@@ -47,7 +47,7 @@ const OccultClinic = () => {
                     <div className=" medical-tab-buttons mb-4 flex flex-wrap gap-3"> 
                          {categories.map((cat) => (
                             <button key={cat.key}
-                            className={`cutom-tab-style py-[8px] px-[15px] rounded-lg text-[14px] ${activeCategory === cat.key ? "bg-[#faf6e6]" : ""}`}
+                            className={`cutom-tab-style py-[8px] px-[15px] rounded-lg text-[14px] ${activeCategory === cat.key ? "bg-[#cda202] text-white" : ""}`}
                             onClick={() => setActiveCategory(cat.key)}
                             style={{borderWidth: '1px', borderColor: '#CDA202'}}
                             >

@@ -78,3 +78,7 @@ section p {
 .ab-meet-experts-card img {
   transition: all .5s ease-in-out;
 }
+.active-custom-tab{
+  background-color: #CDA202;
+  color: #ffffff;
+}

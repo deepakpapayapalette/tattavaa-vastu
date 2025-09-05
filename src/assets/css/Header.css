@@ -114,7 +114,7 @@ header nav .collapse {
     visibility: visible;
 }
 
-nav header nav #navbarNav ul li .active {
+nav #navbarNav ul li .active {
     color: var(--primary-color);
 }
 
@@ -136,11 +136,11 @@ nav .service-dropdown {
 
 
 
-@media screen and (min-width:992px) {
+/* @media screen and (min-width:992px) {
     .service-link:hover .service-dropdown {
         display: block;
     }
-}
+} */
 
 
 ul.service-inner-card {

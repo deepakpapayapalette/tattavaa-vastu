@@ -32,26 +32,38 @@ export const newsArticleData=[
   {
   id:1,
     img: newsImage,
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    title: "Life Path Number 18: Meaning, Numerology & Personality",
 },
 {
   id:2,
-      img: newsImage,
+  img: newsImage,
+  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        title: "Life Path Number 18: Meaning, Numerology & Personality",
 },
 {
   id:3,
-      img: newsImage,
+  img: newsImage,
+  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        title: "Life Path Number 18: Meaning, Numerology & Personality",
 },
 {
   id:4,
-      img: newsImage,
+  img: newsImage,
+  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        title: "Life Path Number 18: Meaning, Numerology & Personality",
 },
 {
   id:5,
-      img: newsImage,
+  img: newsImage,
+  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        title: "Life Path Number 18: Meaning, Numerology & Personality",
 },
 {
   id:6,
-      img: newsImage,
+  img: newsImage,
+  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    title: "Life Path Number 18: Meaning, Numerology & Personality",
 },
 ]
 export const cardsData = [
@@ -313,16 +325,19 @@ export const FortuneBasketData = [
 ]
 export const testimonialsData = [
   {
+    id:1,
     text: `""After implementing Triangle Vastuu's advice, our home feels so much more peaceful. Relationships have improved, and we've experienced a noticeable increase in well-being." - A satisfied client from Mumbai."`,
     client: "Client Name",
     location: "Mumbai, India",
   },
   {
+    id:2,
     text: `"After implementing Triangle Vastuu's advice, our home feels so much more peaceful. Relationships have improved, and we've experienced a noticeable increase in well-being." - A satisfied client from Mumbai."`,
     client: "Another Client",
     location: "Delhi, India",
   },
   {
+    id:3,
     text: `"After implementing Triangle Vastuu's advice, our home feels so much more peaceful. Relationships have improved, and we've experienced a noticeable increase in well-being." - A satisfied client from Mumbai."`,
     client: "Business Owner",
     location: "Pune, India",

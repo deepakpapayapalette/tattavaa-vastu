@@ -19,14 +19,14 @@ export default function RudrakshaHealing() {
         <div className="row g-4">
           {/* Card 1 */}
           <div className="col-12 col-md-4">
-            <div className=" border-0 bg-[#faf6e6]  rounded-3">
-              <div
-                className="p-3 font-semibold text-white text-lora text-[24px]"
+            <div className=" border-0 bg-[#faf6e6]  rounded-3 h-100">
+              <h5
+                className="p-3 font-semibold text-white text-lora lg:text-[24px]"
                 style={{ backgroundColor: "#cda202", borderRadius: "0.5rem 0.5rem 0 0" }}
               >
                 Balance Energies
-              </div>
-              <div className="p-3 bg-[#faf6e6] flex flex-col justify-between">
+              </h5>
+              <div className="p-3 bg-[#faf6e6] flex flex-col justify-between  ">
                 <p className="text-dark">
                   Ancient sacred beads used to balance energies and promote
                   profound mental peace.
@@ -40,14 +40,14 @@ export default function RudrakshaHealing() {
 
           {/* Card 2 */}
           <div className="col-12 col-md-4">
-            <div className=" border-0 bg-[#faf6e6]  rounded-3">
-              <div
-                className="p-3 font-semibold text-white text-lora text-[24px]"
+            <div className=" border-0 bg-[#faf6e6]  rounded-3 h-100">
+              <h5
+                className="p-3 font-semibold text-white text-lora lg:text-[24px]"
                 style={{ backgroundColor: "#cda202", borderRadius: "0.5rem 0.5rem 0 0" }}
               >
                 Customized Recommendations
-              </div>
-              <div className="p-3  bg-[#faf6e6] flex flex-col justify-between">
+              </h5>
+              <div className="p-3  bg-[#faf6e6] flex flex-col justify-between ">
                 <p className="text-dark">
                   Based on individual astrological profiles for optimal spiritual
                   benefits.
@@ -61,13 +61,13 @@ export default function RudrakshaHealing() {
 
           {/* Card 3 */}
           <div className="col-12 col-md-4">
-            <div className="  border-0 bg-[#faf6e6] rounded-3">
-              <div
-                className="font-semibold p-3 text-white text-lora text-[24px]"
+            <div className="  border-0 bg-[#faf6e6] rounded-3 h-100">
+              <h5
+                className="font-semibold p-3 text-white text-lora lg:text-[24px]"
                 style={{ backgroundColor: "#cda202", borderRadius: "0.5rem 0.5rem 0 0" }}
               >
                 Healing Powers
-              </div>
+              </h5>
               <div className="p-3 bg-[#faf6e6] flex flex-col justify-between ">
                 <p className="text-dark">
                   Gain insights into the profound spiritual benefits and healing

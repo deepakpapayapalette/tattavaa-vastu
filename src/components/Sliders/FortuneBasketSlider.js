@@ -1,5 +1,6 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
+import FortuneBasketCard from '../UI/FortuneBasketCard';
 const FortuneBasketSlider = ({filteredData}) => {
 
            const responsive = {
@@ -56,10 +57,7 @@ const FortuneBasketSlider = ({filteredData}) => {
                                               <h4 className="  text-gray-900 font-semibold mb-2" style={{ fontFamily: 'Lora, serif' }}>
                                               7 Mukhi Rudraksha 
                                               </h4>
-                                              {/* <div className="text-right">
-                                                  <h4 className="font-semibold text-gray-900  mb-0 text-start">₹20</h4>
-                                                  <span className="text-sm text-gray-600">Per Min</span>
-                                              </div> */}
+                                        
                                           </div>
                                           <div className='flex items-cetner '>
                                             <div className='text-[16px] me-3'>₹8,399 </div>
@@ -76,7 +74,7 @@ const FortuneBasketSlider = ({filteredData}) => {
                                           </button>
                                       </div>
                                   </div>
-                                
+                    
                               </div>
                               )
                           })} 

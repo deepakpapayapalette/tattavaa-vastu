@@ -3,13 +3,14 @@
 import { useState } from 'react';
 import { FortuneBasketData } from '../../data/LocalData';
 import { FaArrowRightLong } from "react-icons/fa6";
-import astrologer from '../../assets/images/astrologer.png';
-import Carousel from 'react-multi-carousel';
+// import astrologer from '../../assets/images/astrologer.png';
+// import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import AstrologerCard from '../UI/AstrologerCard';
-import FortuneBasketCard from '../UI/OccultTrainingCard';
-import OccultTrainingCard from '../UI/OccultTrainingCard';
+// import AstrologerCard from '../UI/AstrologerCard';
+// import FortuneBasketCard from '../UI/OccultTrainingCard';
+// import OccultTrainingCard from '../UI/OccultTrainingCard';
 import FortuneBasketSlider from '../Sliders/FortuneBasketSlider';
+import { NavLink } from 'react-router-dom';
 // import AstrologerCard from '../UI/AstrologerCard';
 
 
@@ -38,10 +39,11 @@ const FortuneBasket = () => {
                         </p>
                     </div>
                     <div className='col-lg-3 col-12 d-flex justify-content-lg-end'>
-                        <button className="btn mb-3 mb-lg-0 flex items-center" onClick={() => setActiveCategory("all")}
-                        >
-                         View All <FaArrowRightLong className='ms-2 d-inline'  />
-                        </button>
+                          <button className="btn mb-3 mb-lg-0 flex items-center"  >
+                              <NavLink className="no-underline text-dark" to="/shop"> 
+                                  View All <FaArrowRightLong className='ms-2 d-inline' />
+                              </NavLink>
+                          </button>
                     </div>
                 </div> 
             {/* <div className="row">
@@ -63,7 +65,6 @@ const FortuneBasket = () => {
 
           <div className="row">  
                 <FortuneBasketSlider filteredData={filteredCards} />
-                {/* <OccultTrainingCard/> */}
           </div> 
         </div>
     </section>

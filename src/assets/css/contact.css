@@ -1,0 +1,43 @@
+.contact-section {
+    background-color: #f8f1dc;
+    /* light beige */
+}
+
+.contact-info-card {
+    /* background: url('/images/meditation-bg.jpg') no-repeat center center/cover; */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info-card h6 {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.contact-info-card a {
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.contact-info-card a:hover {
+    color: #f5c518;
+    /* golden hover */
+}
+
+.send-btn {
+    background-color: #b08900;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.send-btn:hover {
+    background-color: #806000;
+    color: #fff;
+}
+
+.overlay-contact {
+    background-color: #0000007a;
+    padding: 30px;
+    border-radius: 10px
+}

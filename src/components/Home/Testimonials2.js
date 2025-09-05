@@ -82,13 +82,10 @@ const Testimonials2 = () => {
                       <div className="col-md-8 col-12 mx-auto">
                           <Slider {...settings}>
                               {testimonialsData.map((el) => {
-                                  return (
-                                      <>
+                                  return ( 
                                           <div className='flex justify-center min-h-[262px]' key={el.id}>
-                                              <div className="tv-wrap" >
-                                                  {/* yellow bubble layer */}
-                                                  <div className="tv-yellow" aria-hidden="true" />
-                                                  {/* white card */}
+                                              <div className="tv-wrap"> 
+                                                  <div className="tv-yellow" aria-hidden="true" /> 
                                                   <article className="tv-card" role="figure">
                                                       <p className="tv-quote">{el.text}</p>
                                                       <div className="tv-client">
@@ -97,8 +94,7 @@ const Testimonials2 = () => {
                                                       </div>
                                                   </article>
                                               </div>
-                                          </div>
-                                      </>
+                                          </div> 
                                   )
                               })}
                           </Slider>

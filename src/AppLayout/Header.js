@@ -61,7 +61,6 @@ const Header = () => {
               <img src={Logo} alt="Logo"  className="me-4" /> 
             </a>
           </div> 
-        {/* Toggle button for mobile */}
         <button
           className="navbar-toggler"
           type="button"
@@ -73,36 +72,35 @@ const Header = () => {
             onClick={() => setExpanded(!expanded)}
           >
             {expanded? <IoMdClose />:  <AiOutlineMenu />} 
-        </button>
-
+        </button> 
         {/* Menu */}
-          <div className={`collapse navbar-collapse pb-3 pb-xl-0 ${expanded ? "show" : ""}`} id="navbarNav">
+          <div className={`collapse navbar-collapse pb-3 pb-lg-0 ${expanded ? "show" : ""}`} id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li><NavLink onClick={handleClose} to="/"  className='nav-link ' >Home</NavLink></li>
             <li className="nav-item">  <NavLink onClick={handleClose} to="/about" className='nav-link '>About</NavLink> </li>
             <li className="nav-item relative  service-link ">
-              <NavLink to="/Service" className='nav-link' onClick={handleClose}>
-                <span className='dropdown-toggle'>
+                  <span className='dropdown-toggle flex items-center '>
+                  <NavLink to="/Service" className='nav-link' onClick={handleClose}> 
                   Service
-                </span> 
               </NavLink> 
+                </span> 
             
               <div className="service-dropdown dropdown">
                 <ul className='service-inner-card'>
-                  {servicesList.map((el) => {
-                    return (<>
-                  <li key={el.id}><NavLink to="/test"> 
+                  {servicesList.map((el , i) => {
+                    return (
+                  <li key={i}><NavLink to="/test"> 
                       {el.name}
-                  </NavLink></li> 
-                    
-                    </>)
+                      </NavLink>
+                      </li>  
+                    )
                   })}
                 </ul>
                 {/* <GoTriangleDown /> */}
               </div>
             </li>
-            <li className="nav-item"> <NavLink onClick={handleClose} to="/medical-board"  className='nav-link '>Shop</NavLink>  </li>
-            <li className="nav-item">   <NavLink onClick={handleClose} to="/news-articles"  className='nav-link '>Training Classes</NavLink>  </li>
+            <li className="nav-item"> <NavLink onClick={handleClose} to="/shop" className='nav-link'>Shop</NavLink>  </li>
+            <li className="nav-item">   <NavLink onClick={handleClose} to="/training-classes"  className='nav-link '>Training Classes</NavLink>  </li>
             <li className="nav-item">   <NavLink onClick={handleClose} to="/news-articles"  className='nav-link '>News & Article</NavLink>  </li>
             <li className="nav-item"> <NavLink onClick={handleClose} to="/contact"  className='nav-link '>Contact Us</NavLink> </li>
           </ul>
@@ -111,8 +109,7 @@ const Header = () => {
           <div className="d-flex align-items-center gap-2 mb-lg-0 mb-3">
                    <button className='login-btn   rounded-md hover:bg-[#cda202] hover:text-white transition text-lora'>Login</button>
           </div>
-            </div>
-       
+            </div> 
       </div>
     </nav>
       </header>

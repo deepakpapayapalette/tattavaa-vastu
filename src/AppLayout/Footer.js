@@ -34,11 +34,11 @@ const Footer = () => {
           <div className="col-md-2">
             <h6 className="text-lora font-semibold mb-3 text-[20px] ">About</h6>
             <ul className="list-unstyled">
-              <li><a href="#" className="footer-link">Home</a></li>
-              <li><a href="#" className="footer-link">Service</a></li>
-              <li><a href="#" className="footer-link">Shop</a></li>
-              <li><a href="#" className="footer-link">Training Classes</a></li>
-              <li><a href="#" className="footer-link">News & Article</a></li>
+              <li><NavLink to="/" className="footer-link">Home</NavLink></li>
+              <li><NavLink to="/service" className="footer-link">Service</NavLink></li>
+              <li><NavLink to="/shop" className="footer-link">Shop</NavLink></li>
+              <li><NavLink to="/training-classes" className="footer-link">Training Classes</NavLink></li>
+              <li><NavLink to="/news-articles" className="footer-link">News & Article</NavLink></li>
             </ul>
           </div>
 
@@ -46,11 +46,11 @@ const Footer = () => {
           <div className="col-md-2">
             <h6 className="text-lora font-semibold mb-3 text-[20px]">Quick Links</h6>
             <ul className="list-unstyled">
-              <li><a href="#" className="footer-link">About Us</a></li>
-              <li><a href="#" className="footer-link">Contact Us</a></li>
-              <li><a href="#" className="footer-link">Privacy Policy</a></li>
-              <li><a href="#" className="footer-link">Terms Of Use</a></li>
-              <li><a href="#" className="footer-link">Term & Conditions</a></li>
+              <li><NavLink to="/about" className="footer-link">About Us</NavLink></li>
+              <li><NavLink to="/contact" className="footer-link">Contact Us</NavLink></li>
+              <li><NavLink to="#" className="footer-link">Privacy Policy</NavLink></li>
+              <li><NavLink to="#" className="footer-link">Terms Of Use</NavLink></li>
+              <li><NavLink to="#" className="footer-link">Term & Conditions</NavLink></li>
             </ul>
           </div>
 

@@ -24,10 +24,10 @@ export default function VastuAstrology() {
           {/* Card 1 */}
           <div className="col-12 col-md-6">
             <div
-              className="d-flex justify-content-between align-items-center p-4 rounded hover:shadow-sm h-100"
+              className=" p-4 rounded hover:shadow-sm h-100 sm:flex-row flex-col flex sm:items-center items-start"
               style={{ backgroundColor: "#faf6e6" }}
             >
-              <div className="pe-3">
+              <div className="pe-3 ">
                 <h4 className="fw-semibold  text-lora">
                   Integrate Cosmic Blueprints
                 </h4>
@@ -37,14 +37,14 @@ export default function VastuAstrology() {
                 </p>
               </div>
               <div
-                className="flex-shrink-0 d-flex align-items-center justify-content-center"
-                style={{ width: "100px", height: "100px" }}
+                className="flex-shrink-0 d-flex align-items-center justify-content-center mt-sm-0 mt-3"
+               
               >
                 <img
                   src={astroLeftImg}
                   alt="Cosmic Blueprints"
                   className="img-fluid"
-                  style={{ objectFit: "contain" }}
+                  style={{ objectFit: "cover" }}
                 />
               </div>
             </div>
@@ -53,7 +53,7 @@ export default function VastuAstrology() {
           {/* Card 2 */}
           <div className="col-12 col-md-6">
             <div
-              className="d-flex justify-content-between align-items-center p-4 rounded hover:shadow-sm h-100"
+              className="p-4 rounded hover:shadow-sm h-100 sm:flex-row flex-col flex sm:items-center items-start"
               style={{ backgroundColor: "#faf6e6" }}
             >
               <div className="pe-3">
@@ -64,8 +64,8 @@ export default function VastuAstrology() {
                 </p>
               </div>
               <div
-                className="flex-shrink-0 d-flex align-items-center justify-content-center"
-                style={{ width: "100px", height: "100px" }}
+                className="flex-shrink-0 d-flex align-items-center justify-content-center mt-sm-0 mt-3"
+               
               >
                 <img
                   src={astroRightImg}
