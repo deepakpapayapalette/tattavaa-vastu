@@ -167,7 +167,7 @@ ul.service-inner-card {
 
 }
 
-button.login-btn {
+.login-btn {
     cursor: pointer;
     padding: 12px 30px;
     margin: 0;
@@ -181,7 +181,7 @@ button.login-btn {
     z-index: 1;
 }
 
-button.login-btn::after {
+.login-btn::after {
     content: '';
     position: absolute;
     top: 0;
@@ -193,11 +193,11 @@ button.login-btn::after {
     z-index: -1;
 }
 
-button.login-btn:hover::after {
+.login-btn:hover::after {
     left: 0;
 
 }
 
-button.login-btn:hover {
+.login-btn:hover {
     color: white;
 }

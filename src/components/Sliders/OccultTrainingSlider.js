@@ -1,5 +1,6 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
+import { NavLink } from 'react-router-dom';
 const OccultTrainingSlider = ({filteredData}) => {
                const responsive = {
         superLargeDesktop: {
@@ -72,9 +73,9 @@ const OccultTrainingSlider = ({filteredData}) => {
                     {/* Button Section */}
                     <div className="flex justify-between items-center pt-2">
                       <span></span>
-                      <button className="text-black font-medium flex items-center gap-1 hover:text-yellow-600">
+                      <NavLink to="/enroll" className="text-black no-underline font-medium flex items-center gap-1 hover:text-yellow-600">
                         Enroll Now →
-                      </button>
+                      </NavLink>
                     </div>
                   </div>
                 </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import ResidentialVastuImage from  '../../assets/images/ResidentialVastu.png'
+import { NavLink } from "react-router-dom";
 
 const ResidentialVastu = () => {
   return (
@@ -33,11 +34,11 @@ const ResidentialVastu = () => {
             providing solutions without requiring major structural changes.
           </p>
 
-          <button className="px-8 py-3 text-[#cda202] text-lora   text-[18px] rounded-md hover:bg-[#cda202] hover:text-white transition-all duration-300"
+          <NavLink to='/consult' className="second-btn"
             style={{border:'1px solid #cda202'}}
             >
             Contact Now
-          </button>
+          </NavLink>
         </div>
       </div>
         </div>

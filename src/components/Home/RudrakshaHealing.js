@@ -1,8 +1,21 @@
 // RudrakshaHealing.jsx
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { NavLink } from "react-router-dom";
 
 export default function RudrakshaHealing() {
+
+  // const RudrakshaHealingData = [
+  //   {
+  //     id:1,
+  //   },
+  //   {
+  //     id:2,
+  //   },
+  //   {
+  //     id:3,
+  //   },
+  // ]
   return (
     <section className="space-top">
       <div className="container">
@@ -32,7 +45,7 @@ export default function RudrakshaHealing() {
                   profound mental peace.
                 </p>
                 <div> 
-                    <button className=" text-[12px] text-lora text-[#cda202] px-4 py-2 rounded-md" style={{border:'1px solid #cda202'}}>Email Now</button>
+                    <NavLink to='/enroll' className=" second-btn" style={{border:'1px solid #cda202'}}>Email Now</NavLink>
                 </div>
               </div>
             </div>
@@ -53,7 +66,7 @@ export default function RudrakshaHealing() {
                   benefits.
                 </p>
                 <div> 
-                    <button className=" text-[12px] text-lora text-[#cda202] px-4 py-2 rounded-md" style={{border:'1px solid #cda202'}}>Email Now</button>
+                    <NavLink to='/enroll' className=" second-btn" style={{border:'1px solid #cda202'}}>Email Now</NavLink>
                 </div>
               </div>
             </div>
@@ -74,7 +87,7 @@ export default function RudrakshaHealing() {
                   powers of Rudraksha.
                 </p>
                 <div> 
-                    <button className=" text-[12px] text-lora text-[#cda202] px-4 py-2 rounded-md" style={{border:'1px solid #cda202'}}>Email Now</button>
+                    <NavLink to='/enroll' className=" second-btn" style={{border:'1px solid #cda202'}}>Email Now</NavLink>
                 </div>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import commercial_vastu_video from "../../assets/videos/CommercialVastu.mp4"
 import { FiCheckCircle } from "react-icons/fi";
+import { NavLink } from "react-router-dom";
 const CommercialVastu = () => {
   return (
     <section className="bg-[#ffffff] space-top ">
@@ -19,11 +20,11 @@ const CommercialVastu = () => {
                               foster growth, efficiency, and profitability.
                           </p>
 
-                          <button className="px-6 py-2  text-[#cda202] text-[18px] text-lora bg-[#fdf6e6] font-medium rounded-md hover:bg-[#cda202] hover:text-white transition-all duration-300 mb-6"
+                          <NavLink to='/consult' className="second-btn"
                               style={{ border: '1px solid #cda202' }}
                           >
                               Let’s Discuss
-                          </button>
+                          </NavLink>
                       </div>
                       <div className="flex text-center lg:text-left pt-[24px]"> 
                      

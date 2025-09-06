@@ -1,5 +1,6 @@
 import React from 'react'
 import FortuneBasket from '../../assets/images/FortuneBasket.png'
+import { NavLink } from 'react-router-dom'
 const OccultTrainingCard = () => {
   return (
     <>
@@ -24,10 +25,9 @@ const OccultTrainingCard = () => {
 
         {/* Button Section */}
         <div className="flex justify-between items-center pt-2">
-          <span></span>
-          <button className="text-black font-medium flex items-center gap-1 hover:text-yellow-600">
-            Enroll Now →
-          </button>
+        <NavLink to="/enroll" className="text-black no-underline font-medium flex items-center gap-1 hover:text-yellow-600">
+                        Enroll Now →
+                      </NavLink>
         </div>
       </div>
     </div>

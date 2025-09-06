@@ -79,6 +79,7 @@ header .active {
 }
 
 .second-btn {
+  text-decoration: none;
   cursor: pointer;
   padding: 12px 30px;
   margin: 0;

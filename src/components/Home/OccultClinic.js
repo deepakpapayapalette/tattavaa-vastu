@@ -2,13 +2,12 @@
 
 import { useState } from 'react';
 import { OccultClinicData } from '../../data/LocalData';
-import { FaArrowRightLong } from "react-icons/fa6";
+// import { FaArrowRightLong } from "react-icons/fa6";
 // import astrologer from '../../assets/images/astrologer.png';
 // import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import AstrologerCard from '../UI/AstrologerCard';
 import OccultClinicSlider from '../Sliders/OccultClinicSlider';
-// import AstrologerCard from '../UI/AstrologerCard';
+
 
 
 const OccultClinic = () => {

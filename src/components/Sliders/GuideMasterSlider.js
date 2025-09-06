@@ -1,5 +1,6 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
+import { NavLink } from 'react-router-dom';
 
 const GuideMasterSlider = ({GuideMasterArray}) => {
   
@@ -73,11 +74,11 @@ const GuideMasterSlider = ({GuideMasterArray}) => {
                               
                                    </div>
                                    <div className="">
-                                       <button className="py-3 px-4 text-[18px] w-full main-bg hover:shadow-md text-white font-medium   rounded-lg transition"
-                                           style={{ fontFamily: 'Lora, serif' }}
+                                       <NavLink to="/consult" className="text-lora no-underline py-3 px-4 text-[18px] w-full main-bg hover:shadow-md text-white font-medium   rounded-lg transition"
+
                                        >
                                          Book a Consultation
-                                       </button>
+                                       </NavLink>
                                    </div>
                                </div> 
                            </div>

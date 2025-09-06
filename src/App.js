@@ -22,6 +22,8 @@ import GuidedMastersDetail from './components/DetailsPages/GuidedMastersDetail';
 import ServiceDetail from './components/DetailsPages/ServiceDetail';
 import ShopDetail from './components/DetailsPages/ShopDetail';
 import Login from './components/Login/Login';
+import EnrollmentForm from './components/EnrollmentForm/EnrollmentForm';
+import ConsultationForm from './components/ConsultationForm/ConsultationForm';
 // import ServiceDetail from './Pages/ServiceInnerPages/ServiceDetail';
 // import { getApi } from './API/GetApi';
 // import { ProductDetail } from './Components/UI/ProductDetail';
@@ -43,6 +45,16 @@ function App() {
         {
           path: '/login',
           element: <Login/>
+       
+        },
+        {
+          path: '/enroll',
+          element: <EnrollmentForm/>
+       
+        },
+        {
+          path: '/consult',
+          element: <ConsultationForm/>
        
         },
         {

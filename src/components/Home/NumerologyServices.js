@@ -3,6 +3,7 @@ import React from "react";
 import numerologyImg1 from  "../../assets/images/icons/Numerology1.png"
 import numerologyImg2 from  "../../assets/images/icons/NumerologyServices2.png"
 import numerologyImg3 from  "../../assets/images/icons/NumerologyServices3.png"
+import { NavLink } from "react-router-dom";
 
 export default function NumerologyServices() {
   return (
@@ -32,12 +33,12 @@ export default function NumerologyServices() {
               <p className="text-muted mb-4 flex-grow-1">
                 Choose names that resonate with success and positivity.
               </p>
-              <button
-                className="text-lora py-3 px-4 text-[18px] w-full main-bg hover:shadow-md text-white font-medium   rounded-lg transition"
+              <NavLink to='/consult'
+                className="text-lora no-underline py-3 px-4 text-[18px] w-full main-bg hover:shadow-md text-white font-medium   rounded-lg transition"
                 style={{ backgroundColor: "#C19A00" }}
               >
                 Book a Consultation
-              </button>
+              </NavLink>
             </div>
           </div>
 
