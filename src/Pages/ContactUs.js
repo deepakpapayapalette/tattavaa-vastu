@@ -75,38 +75,38 @@ const ContactUs = () => {
           <div className="container">
             <div className="row g-4 align-items-center"> 
               <div className="col-md-6">
-                <div className={`relative contact-info-card p-4 rounded text-white`}
+                <div className={`relative contact-info-card lg:p-[25px] rounded text-white bg-no-repeat`}
                   style={{ backgroundImage: `url(${contactBg})` }}
                   >
                   <div style={{ }} className="overlay-contact">
-                    <div className="flex justify-between"> 
-                      <div className="contact-group"> 
+                    <div className="lg:flex justify-between "> 
+                      <div className="contact-group mb-4 mb-xl-0"> 
                       <div className="flex ">
                         <MdOutlinePhoneInTalk size={24} className="me-2" />
-                        <h4 className="text-white lg:text-[24px]"> Phone Number</h4>
+                        <h5 className="text-white lg:text-[24px]"> Phone Number</h5>
                         </div>
                       <a className="text-white no-underline" href="tel:5252525252" >+91 5252525252</a>
                       </div> 
                       <div className="contact-group"> 
                         <div className="flex">
                             <MdOutlineEmail size={24} className="me-2" />
-                             <h4 className="text-white lg:text-[24px]">   Email ID</h4>
+                             <h5 className="text-white lg:text-[24px]">   Email ID</h5>
                         </div>
                         <a href="mailto:rjvisj42@gmail.com" className="no-underline text-white">rjvisj42@gmail.com</a> 
                       </div> 
                     </div>  
-                    <div className=" mt-5">
-                      <div className="flex items-center">
-                        <CiLocationOn className="me-2" size={24} />
-                        <h4 className="text-white mb-0"> Address</h4>
+                    <div className=" mt-lg-5 mt-4 address-block">
+                      <div className="flex items-center mb-2">
+                        <CiLocationOn className="me-1" size={24} />
+                        <h5 className="text-white lg:text-[24px mb-0"> Address</h5>
                       </div>
-                    <p className="text-white">
-                      H-Block, Sector-63, Noida, Uttar Pradesh, <br />  201301, India
+                    <p className="text-white ">
+                      H-Block, Sector-63, Noida, Uttar Pradesh,  201301, India
                     </p> 
                     </div> 
              
-                         <div className="mt-5">
-                                <h4 className=" mb-4 text-white lg:text-[24px]">Follow Us</h4>
+                         <div className="mt-lg-5 mt-4">
+                                <h5 className=" mb-3 text-white lg:text-[24px]">Follow Us</h5>
                                 <div className="d-flex gap-3">
                                     <a href="#">
                                         <FaFacebookF size={18} color="#fff" /></a>

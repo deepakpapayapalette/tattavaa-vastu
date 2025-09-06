@@ -21,6 +21,7 @@ import NewsArticleDetail from './components/DetailsPages/NewsArticleDetail';
 import GuidedMastersDetail from './components/DetailsPages/GuidedMastersDetail';
 import ServiceDetail from './components/DetailsPages/ServiceDetail';
 import ShopDetail from './components/DetailsPages/ShopDetail';
+import Login from './components/Login/Login';
 // import ServiceDetail from './Pages/ServiceInnerPages/ServiceDetail';
 // import { getApi } from './API/GetApi';
 // import { ProductDetail } from './Components/UI/ProductDetail';
@@ -40,15 +41,20 @@ function App() {
        
         },
         {
+          path: '/login',
+          element: <Login/>
+       
+        },
+        {
           path: '/about',
           element: <About />
         },
         {
-          path: '/service',
+          path: '/services',
           element: <Services />,
         },
         {
-          path: '/service/:id',
+          path: '/services/:id',
           element: <ServiceDetail />,
         },
         {

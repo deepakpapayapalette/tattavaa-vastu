@@ -49,7 +49,7 @@ const Header = () => {
   return (
     <>
       <header> 
-      <nav className={`navbar navbar-expand-xl navbar-light bg-white shadow-sm  main-navbar  
+      <nav className={`navbar navbar-expand-md navbar-light bg-white shadow-sm  main-navbar  
           // scrollDown == true ? 'headerfix' : '' 
         `
       }
@@ -80,7 +80,7 @@ const Header = () => {
             <li className="nav-item">  <NavLink onClick={handleClose} to="/about" className='nav-link '>About</NavLink> </li>
             <li className="nav-item relative  service-link ">
                   <span className='dropdown-toggle flex items-center '>
-                  <NavLink to="/Service" className='nav-link' onClick={handleClose}> 
+                  <NavLink to="/services" className='nav-link' onClick={handleClose}> 
                   Service
               </NavLink> 
                 </span> 
@@ -107,7 +107,7 @@ const Header = () => {
 
           {/* Right buttons */}
           <div className="d-flex align-items-center gap-2 mb-lg-0 mb-3">
-                   <button className='login-btn   rounded-md hover:bg-[#cda202] hover:text-white transition text-lora'>Login</button>
+                   <NavLink to="/login" className='login-btn   rounded-md text-lora'>Login</NavLink>
           </div>
             </div> 
       </div>

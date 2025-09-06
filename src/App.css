@@ -24,7 +24,7 @@ p {
 
 section h2,
 section h3,
-section h4, 
+section h4,
 section h5 {
   color: #000000;
 }
@@ -76,4 +76,57 @@ section {
 
 header .active {
   color: var(--primary-color);
+}
+
+.second-btn {
+  cursor: pointer;
+  padding: 12px 30px;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  /* border: 2px solid #cda301; */
+  border-radius: 8px;
+  overflow: hidden;
+  background: transparent;
+  transition: color 0.8s ease;
+  z-index: 1;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.second-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #cda301;
+  transition: left 0.8s ease;
+  z-index: -1;
+}
+
+.second-btn:hover::after {
+  left: 0;
+
+}
+
+.second-btn:hover {
+  color: white;
+}
+
+.first-btn {
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  color: white;
+
+}
+
+.cutom-tab-style {
+  background-color: #faf6e6;
+
+}
+
+.active-tab-btn-style {
+  background-color: var(--primary-color);
 }

@@ -1,23 +1,24 @@
 import React from "react";
-import banner from '../../assets/videos/banner.mp4'; // Ensure you have a banner image at this path
-import { heroSliderData } from "../../data/LocalData";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+import banner from '../../assets/videos/banner.mp4'; 
+import { NavLink } from "react-router-dom";
+// import { heroSliderData } from "../../data/LocalData";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css"; 
+// import "slick-carousel/slick/slick-theme.css";
 export default function HeroBanner() {
    
-     const settings = {
-    dots: false,                
-    infinite: true,            // loop mode
-    speed: 1000,               // transition speed (1s)
-    slidesToShow: 1,           // show one slide
-    slidesToScroll: 1,         // scroll one at a time
-    fade: false,                
-    autoplay: false,           
-    autoplaySpeed: 4000,       
-    pauseOnHover: false,       
-    arrows: false             
-  };
+  //    const settings = {
+  //   dots: false,                
+  //   infinite: true,          
+  //   speed: 1000,              
+  //   slidesToShow: 1,           
+  //   slidesToScroll: 1,         
+  //   fade: false,                
+  //   autoplay: false,           
+  //   autoplaySpeed: 4000,       
+  //   pauseOnHover: false,       
+  //   arrows: false             
+  // };
 
   return (
     <section className="relative "> 
@@ -51,12 +52,12 @@ export default function HeroBanner() {
 
           {/* Buttons */}
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="px-6 py-3 bg-yellow-500 text-white font-semibold rounded-md shadow-md hover:bg-yellow-600 transition" style={{ fontFamily: 'Lora, serif' }}>
+            <NavLink className="px-6 py-3 bg-yellow-500 text-white font-semibold rounded-md shadow-md hover:bg-yellow-600 transition no-underline" style={{ fontFamily: 'Lora, serif' }}>
               Book a Consultation
-            </button>
-            <button className="px-6 py-3  border-yellow-500 text-yellow-500 font-semibold rounded-md hover:bg-yellow-500 hover:text-black transition" style={{ borderWidth: '1px', fontFamily: 'Lora, serif' }}>
-              Explore Service
-            </button>
+            </NavLink>
+              <NavLink to="/services" className="px-6 py-3 second-btn font-semibold no-underline " style={{ borderWidth: '1px', fontFamily: 'Lora, serif' }}> 
+                  Explore Service 
+            </NavLink>
           </div>
         </div>
         </div>

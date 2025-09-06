@@ -15,7 +15,7 @@
 
 .contact-info-card a {
     color: white;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     transition: color 0.3s ease;
 }
 
@@ -38,6 +38,18 @@
 
 .overlay-contact {
     background-color: #0000007a;
-    padding: 30px;
+    padding: 25px;
     border-radius: 10px
+}
+
+@media screen and (max-width:768px) {
+    .address-block>p {
+        font-size: 16px;
+    }
+
+    .overlay-contact {
+        /* background-color: #0000007a; */
+        padding: 15px;
+        /* border-radius: 10px */
+    }
 }
