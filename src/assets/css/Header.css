@@ -188,7 +188,7 @@ ul.service-inner-card {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #cda301;
+    background-image: linear-gradient(90deg, #cda301, #ecbe07, #937813);
     transition: left 0.8s ease;
     z-index: -1;
 }

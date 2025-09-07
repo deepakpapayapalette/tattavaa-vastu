@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { X } from "lucide-react";
-import { NavLink, useNavigate } from "react-router-dom";
+import {NavLink, useNavigate } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
-import { IconButton, TextField } from "@mui/material";
-import { Button } from "bootstrap";
+import { IconButton, TextField, Button } from "@mui/material";
+
 
 export default function Login() {
     const navigate = useNavigate();
@@ -38,8 +37,6 @@ export default function Login() {
                 {/* Header */}
                 <div className="bg-[#CDA202] text-white px-6 py-2 flex items-center justify-between">
                     <h2 className="text-lg font-medium mb-0 text-lora">Continue with Phone</h2>
-                    {/* <X className="w-5 h-5 cursor-pointer hover:opacity-80" onClick={backFun} />  */} 
-
                     <IconButton className="close-btn" onClick={backFun}>
                         <CloseIcon />
                     </IconButton>
@@ -53,30 +50,7 @@ export default function Login() {
 
                     {/* Phone number input section */}
                     <div className="mb-6">
-
                         <div className="flex  rounded-md overflow-hidden">
-                            {/* <div className="flex items-center bg-gray-50 ">
-
-                                <span className="text-gray-700 font-medium mr-1">{countryCode}</span>
-                                <svg 
-                  className="w-4 h-4 text-gray-400" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-                            </div> */}
-
-                            {/* Phone number input */}
-                            {/* <input
-                type="tel"
-                value={phoneNumber}
-                onChange={(e) => setPhoneNumber(e.target.value)}
-                placeholder="Enter Your Phone Number"
-                className="flex-1 px-4 py-3 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
-                          /> */}
-
                             <TextField
                                 fullWidth
                                 label="Enter Your Phone Number"
@@ -95,32 +69,29 @@ export default function Login() {
                     </div>
 
                     {/* Get OTP button */}
-                    <button
+                    <Button
                         onClick={handleGetOTP}
-                        className="text-lora w-full bg-[#CDA202] hover:bg-yellow-700 text-white font-medium py-3 px-4 rounded-md transition-colors duration-200 mb-6"
+                        fullWidth
+                        variant="contained"
+                        sx={{
+                            // fontSize: '18px',
+                            fontFamily: 'Lora',
+                            bgcolor: "#CDA202",
+                            padding: '12px',
+                        }}
                     >
                         Get OTP
-                    </button>
-
-                    {/* <Button 
-                      fullWidth
-                      variant="contained"
-                      className="submit-btn py-2 text-lora "
-                      sx={{ fontSize: '18px', fontFamily: 'Lora', }} 
-                  >
-                      Request a call back
-                  </Button> */}
-
+                    </Button>
                     {/* Terms and privacy */}
-                    <p className="text-sm text-gray-600 leading-relaxed" >
+                    <p className="text-sm text-gray-600 leading-relaxed pt-4 pt-lg-5" >
                         By Signing up, you agree to our{" "}
-                        <a href="#" className="text-[#CDA202] hover:text-yellow-700 underline">
+                        <NavLink to="#" className="text-[#CDA202] hover:text-yellow-700 underline">
                             Terms of Use
-                        </a>{" "}
+                        </NavLink>{" "}
                         and{" "}
-                        <a href="#" className="text-[#CDA202] hover:text-yellow-700 underline">
+                        <NavLink to="#" className="text-[#CDA202] hover:text-yellow-700 underline">
                             Privacy Policy
-                        </a>
+                        </NavLink>
                     </p>
                 </div>
             </div>

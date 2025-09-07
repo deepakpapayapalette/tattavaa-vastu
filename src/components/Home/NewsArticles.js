@@ -3,6 +3,7 @@ import NewsArticleSlider from '../Sliders/NewsArticleSlider'
 import { FaArrowRightLong } from "react-icons/fa6";
 import { newsArticleData } from '../../data/LocalData';
 import 'react-multi-carousel/lib/styles.css';
+import { NavLink } from 'react-router-dom';
 const NewsArticles = () => {
   return (
     <>
@@ -16,8 +17,10 @@ const NewsArticles = () => {
                               </p>
                           </div>
                           <div className='col-lg-3 col-12 d-flex justify-content-lg-end'>
-                              <button className="btn mb-3 mb-lg-0 flex items-center" >
-                               View All <FaArrowRightLong className='ms-2 d-inline'  />
+              <button className="btn mb-3 mb-lg-0 flex items-center" >
+                <NavLink to="news-articles" className="no-underline text-gray-900 hover:text-[#cda301] hover:underline">
+                  View All <FaArrowRightLong className='ms-2 d-inline' />
+                  </NavLink>
                               </button>
                           </div>
                       </div> 

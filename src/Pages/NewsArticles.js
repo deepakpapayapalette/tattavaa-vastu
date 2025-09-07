@@ -30,6 +30,7 @@ const NewsArticles = () => {
                     </div>
                 </div>
             </section>
+      
         </>
     )
 }

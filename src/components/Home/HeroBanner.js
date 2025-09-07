@@ -37,7 +37,7 @@ export default function HeroBanner() {
         {/* Overlay */}
         <div className="absolute inset-0 bg-opacity-60" style={{ backgroundColor: 'rgb(0 0 0 / 70%)' }}></div> 
         {/* Content */}
-        <div className="relative z-10 max-w-4xl px-6">
+        <div className="relative z-10 max-w-[1200px] px-6">
           <h1 className="text-3xl md:text-5xl  text-white leading-snug " style={{ fontFamily: 'Lora, serif' }}>
             Triangle Vastu : Harmonizing Spaces,
             <br />
@@ -52,7 +52,7 @@ export default function HeroBanner() {
 
           {/* Buttons */}
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <NavLink className="px-6 py-3 bg-yellow-500 text-white font-semibold rounded-md shadow-md hover:bg-yellow-600 transition no-underline" style={{ fontFamily: 'Lora, serif' }}>
+            <NavLink to="/consult" className="px-6 py-3 bg-yellow-500 text-white font-semibold rounded-md shadow-md hover:bg-yellow-600 transition no-underline" style={{ fontFamily: 'Lora, serif' }}>
               Book a Consultation
             </NavLink>
               <NavLink to="/services" className="px-6 py-3 second-btn font-semibold no-underline " style={{ borderWidth: '1px', fontFamily: 'Lora, serif' }}> 

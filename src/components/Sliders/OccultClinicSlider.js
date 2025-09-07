@@ -47,12 +47,16 @@ export default function OccultClinicSlider({filteredCards}) {
                 {filteredCards.map((item) => {
                     return (  
                         <div className="" key={item.id}>
-                            <div className="p-[20px] rounded-xl overflow-hidden hover:shadow-sm second-bg">
+                            <div className="p-[20px] rounded-xl overflow-hidden hover:shadow-sm second-bg ">
+                                <div className='astro-img relative'>
                                 <img
                                     src={item.img}
                                     alt="Astrologer"
-                                    className="w-full  object-cover"
+                                    className="w-full object-cover "
                                 />
+
+                                </div>
+                                
                                 <div className="py-4 px-1">
                                     <div className="flex justify-between items-start">
                                         <h4 className="  text-gray-900 font-semibold mb-0" style={{ fontFamily: 'Lora, serif' }}>
@@ -73,7 +77,7 @@ export default function OccultClinicSlider({filteredCards}) {
                            
                                 </div>
                                 <div className="">
-                                    <button className="py-3 px-4 text-[18px] w-full main-bg hover:shadow-md text-white font-medium   rounded-lg transition"
+                                    <button className="first-btn transition"
                                         style={{ fontFamily: 'Lora, serif' }}
                                     >
                                         Connect Now

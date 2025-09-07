@@ -34,8 +34,7 @@ export default function NumerologyServices() {
                 Choose names that resonate with success and positivity.
               </p>
               <NavLink to='/consult'
-                className="text-lora no-underline py-3 px-4 text-[18px] w-full main-bg hover:shadow-md text-white font-medium   rounded-lg transition"
-                style={{ backgroundColor: "#C19A00" }}
+                className="first-btn" 
               >
                 Book a Consultation
               </NavLink>
@@ -53,9 +52,7 @@ export default function NumerologyServices() {
                 Optimise your contact numbers for luck and communication flow.
               </p>
               <button
-                className="text-lora py-3 px-4 text-[18px] w-full main-bg hover:shadow-md text-white font-medium   rounded-lg transition"
-                style={{ backgroundColor: "#C19A00" }}
-              >
+                 className="first-btn" >
                 Book a Consultation
               </button>
             </div>
@@ -73,9 +70,7 @@ export default function NumerologyServices() {
                 stability.
               </p>
               <button
-                className="text-lora text-lora py-3 px-4 text-[18px] w-full main-bg hover:shadow-md text-white font-medium   rounded-lg transition"
-                style={{ backgroundColor: "#C19A00", fontFamily: "Lora" }}
-              >
+                 className="first-btn" >
                 Book a Consultation
               </button>
             </div>

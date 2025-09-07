@@ -1,11 +1,12 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom';
 import blog1 from '../../assets/images/blog-detail.png'
+// import NewsArticleSlider from '../Sliders/NewsArticleSlider';
+import { newsArticleData } from '../../data/LocalData';
+import RelatedNews from '../Sliders/RelatedNews';
 
 const NewsArticleDetail = () => {
-    const articleState = useLocation();
-
-   
+    const articleState = useLocation();   
   return (
       <>
         <section className='space-top'>
@@ -23,7 +24,17 @@ const NewsArticleDetail = () => {
                       <p>{ articleState.state.desc}</p>
                   </div>
             </div>
-        </section> 
+      </section> 
+            <section className='space-top'>
+                <div className="container ">
+                          <h5 className=" lg:text-[24px] text-gray-900 font-semibold mb-3 text-lora" >
+                              You May Also Like
+                                </h5>
+                    <div className="row">
+                      <RelatedNews relatedNewData={newsArticleData} />
+                    </div>
+                </div>
+            </section>
     </>
   )
 }

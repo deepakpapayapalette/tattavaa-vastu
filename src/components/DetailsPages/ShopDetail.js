@@ -1,6 +1,8 @@
 import React, { useMemo, useState } from 'react'
 import { useLocation, useParams, NavLink } from 'react-router-dom'
 import { FortuneBasketData } from '../../data/LocalData'
+import FortuneBasketSlider from '../Sliders/FortuneBasketSlider';
+import RelatedProducts from '../Sliders/RelatedProducts';
 
 const ShopDetail = () => {
 	const location = useLocation();
@@ -102,6 +104,16 @@ const ShopDetail = () => {
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+			</section>
+			<section className='space-top'>
+				<div className="container ">
+					<h5 className=" lg:text-[24px] text-gray-900 font-semibold mb-3 text-lora" >
+						You May Also Like
+					</h5>
+					<div className="row">
+						<RelatedProducts relatedProductsData={FortuneBasketData} />
 					</div>
 				</div>
 			</section>

@@ -1,6 +1,5 @@
 
 
-import { useState } from 'react';
 import { FortuneBasketData } from '../../data/LocalData';
 import { FaArrowRightLong } from "react-icons/fa6";
 // import astrologer from '../../assets/images/astrologer.png';
@@ -16,15 +15,15 @@ import { NavLink } from 'react-router-dom';
 
 const FortuneBasket = () => {
     
-      const [activeCategory, setActiveCategory] = useState("Vedic Astrologer");
-      const filteredCards = activeCategory === "all" ? FortuneBasketData : FortuneBasketData.filter((card) => card.category === activeCategory); 
+    //   const [activeCategory, setActiveCategory] = useState("Vedic Astrologer");
+    //   const filteredCards = activeCategory === "all" ? FortuneBasketData : FortuneBasketData.filter((card) => card.category === activeCategory); 
       
-    const categories = [
-    { key: "Vedic Astrologer", label: "Vedic Astrologer" },
-    { key: "Palmistry", label: "Palmistry" },
-    { key: "Face Reading", label: "Face Reading" },
-    { key: "Numerology Astrologer", label: "Numerology Astrologer" }, 
-  ];
+//     const categories = [
+//     { key: "Vedic Astrologer", label: "Vedic Astrologer" },
+//     { key: "Palmistry", label: "Palmistry" },
+//     { key: "Face Reading", label: "Face Reading" },
+//     { key: "Numerology Astrologer", label: "Numerology Astrologer" }, 
+//   ];
 
 
   return (
@@ -64,7 +63,7 @@ const FortuneBasket = () => {
             </div> */}
 
           <div className="row">  
-                <FortuneBasketSlider filteredData={filteredCards} />
+                <FortuneBasketSlider filteredData={FortuneBasketData} />
           </div> 
         </div>
     </section>

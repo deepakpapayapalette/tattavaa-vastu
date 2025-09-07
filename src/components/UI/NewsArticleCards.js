@@ -26,8 +26,8 @@ const NewsArticleCards = ({ articleList }) => {
                     
                         </div>
                         <div className=""> 
-                            <NavLink className=" text-[18px] hover:text-[#cda202] transition-shadow  text-decoration-none d-inline"
-                                to={`${articleList.id}`} state={articleList}>
+                            <NavLink className=" text-[18px] text-gray-900 hover:text-[#cda202] transition-shadow  text-decoration-none d-inline"
+                                to={`/news-articles/${articleList.id}`} state={articleList}>
                                 Read More 
                             </NavLink> 
                         </div>

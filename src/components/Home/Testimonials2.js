@@ -4,6 +4,11 @@ import { testimonialsData } from '../../data/LocalData';
 import PrevArrowIcon from '../../assets/images/icons/prev.svg';
 import NextArrowIcon from '../../assets/images/icons/next.svg';
 
+import { FiArrowRight } from "react-icons/fi";
+import { FiArrowLeft } from "react-icons/fi";
+import { BsArrowRightShort } from "react-icons/bs";
+import { BsArrowLeftShort } from "react-icons/bs";
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -12,15 +17,19 @@ import "slick-carousel/slick/slick-theme.css";
 
 const PrevArrow = ({ onClick }) => {
 return (
-<div  onClick={onClick} className='absolute left-[-15px] top-1/2 transform -translate-y-1/2  p-2  cursor-pointer z-10' >
-   <img src={PrevArrowIcon} alt="" className='w-[32px]' />
+<div  onClick={onClick} className='absolute lg:left-[-15px] top-1/2 transform -translate-y-1/2  p-2  cursor-pointer z-10 client-prev' >
+        {/* <img src={PrevArrowIcon} alt="" className='w-[32px]' /> */}
+     
+            <BsArrowLeftShort size={20}/>
+       
 </div>
 );
 };
 const NextArrow = ({ onClick }) => {
 return (
-<div  onClick={onClick} className='absolute right-[-35px] top-1/2 transform -translate-y-1/2 p-2  cursor-pointer z-10' >
- <img src={NextArrowIcon} alt="" className='w-[32px]' />
+<div  onClick={onClick} className='absolute lg:right-[-35px] top-1/2 transform -translate-y-1/2 p-2  cursor-pointer z-10 client-next' >
+        {/* <img src={NextArrowIcon} alt="" className='w-[32px]' /> */}
+         <BsArrowRightShort size={20}/>
 </div>
 );
 }
@@ -37,7 +46,7 @@ const Testimonials2 = () => {
     fade: false,                
     autoplay: false,           
     autoplaySpeed: 4000,       
-    pauseOnHover: false,       
+    pauseOnHover: true,       
     arrows: true ,
     center:true,
     nextArrow:<NextArrow/>,
@@ -69,7 +78,7 @@ const Testimonials2 = () => {
 
   return (
     <>
-          <section className="space-top testimonial-section">
+          <section className="space-top testimonial-section relative">
               <div className="container">
                 <div className="pb-[36px]">
                 <h2 className="font-semibold text-center text-lora mb-0">
@@ -95,8 +104,8 @@ const Testimonials2 = () => {
                                                   </article>
                                               </div>
                                           </div> 
-                                  )
-                              })}
+                                        )
+                                     })}
                           </Slider>
                       </div>
                   </div> 

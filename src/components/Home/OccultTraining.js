@@ -1,6 +1,5 @@
 
 
-import { useState } from 'react';
 import { OccultClinicData } from '../../data/LocalData';
 import { FaArrowRightLong } from "react-icons/fa6";
 // import astrologer from '../../assets/images/astrologer.png';
@@ -13,15 +12,15 @@ import OccultTrainingSlider from '../Sliders/OccultTrainingSlider';
 
 const OccultTraining = () => {
     
-      const [activeCategory, setActiveCategory] = useState("Vedic Astrologer");
+    //   const [activeCategory, setActiveCategory] = useState("Vedic Astrologer");
     //   const filteredCards = activeCategory === "all" ? OccultClinicData : OccultClinicData.filter((card) => card.category === activeCategory); 
       
-    const categories = [
-    { key: "Vedic Astrologer", label: "Vedic Astrologer" },
-    { key: "Palmistry", label: "Palmistry" },
-    { key: "Face Reading", label: "Face Reading" },
-    { key: "Numerology Astrologer", label: "Numerology Astrologer" }, 
-  ];
+//     const categories = [
+//     { key: "Vedic Astrologer", label: "Vedic Astrologer" },
+//     { key: "Palmistry", label: "Palmistry" },
+//     { key: "Face Reading", label: "Face Reading" },
+//     { key: "Numerology Astrologer", label: "Numerology Astrologer" }, 
+//   ];
 
 
   return (
@@ -36,7 +35,8 @@ const OccultTraining = () => {
                         </p>
                     </div>
                     <div className='col-lg-3 col-12 d-flex justify-content-lg-end'>
-                        <button className="btn mb-3 mb-lg-0 flex items-center" onClick={() => setActiveCategory("all")}
+                          <button className="btn mb-3 mb-lg-0 flex items-center"
+                            //   onClick={() => setActiveCategory("all")}
                         >
                          View All <FaArrowRightLong className='ms-2 d-inline'  />
                         </button>

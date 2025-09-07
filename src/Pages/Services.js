@@ -20,7 +20,7 @@ const Services = () => {
                       {servicesData.map((service) => {
                           return (
                             <div className="col-lg-4 col-md-2 col-12 mb-20px" key={service.id}>
-                                    <NavLink  to={`${service.id}`} state={service}>
+                                    <NavLink  to={`/services/${service.id}`} state={service}>
                                       <div className="card service-card ">
                                           <img
                                               src={service.img}

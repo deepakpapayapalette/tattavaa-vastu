@@ -2,6 +2,7 @@
 import React from "react";
 
 import WristWatchAnalysiImg from "../../assets/images/WristWatchAnalysis.png"
+import { NavLink } from "react-router-dom";
 export default function WristWatchAnalysis() {
   return (
       <section className="space-top WristWatchAnalysis-section">
@@ -14,7 +15,7 @@ export default function WristWatchAnalysis() {
                       }}
                   >
                       <div
-                          className="row g-4"
+                          className="row"
                       >
                           <div className="col-lg-5"></div>
                           <div className="col-lg-7">
@@ -33,9 +34,12 @@ export default function WristWatchAnalysis() {
                                           wristwatch as a tool for success and wellbeing, aligning it with
                                           your aspirations.
                                       </p>
-                                      <button className="py-3 px-4 rounded-lg bg-[#cda202]  text-[18px] text-white text-lora">
+                                      <div className="mb-3">
+                                          
+                                      <NavLink to="/consult" className="first-btn">
                                           Book a Consultation
-                                      </button>
+                                      </NavLink>
+                                      </div>
                                   </div>
                               </div>
                           </div>

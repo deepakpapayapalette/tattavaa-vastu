@@ -226,7 +226,7 @@ export const OccultClinicData = [
 export const FortuneBasketData = [
    {
         id: 1,
-        price: "8,399",
+        price: " ,399",
         realPrice:'12,000',
         img: FortuneBasket,
       category: "Vedic Astrologer",
@@ -235,7 +235,7 @@ export const FortuneBasketData = [
     },
    {
       id:2,
-      price: "8,399",
+      price: "2,399",
       realPrice:'12,000',
       category: "Vedic Astrologer",
       img: FortuneBasket,
@@ -244,7 +244,7 @@ export const FortuneBasketData = [
     },
    {
       id:3,
-      price: "8,399",
+      price: "3,399",
       realPrice:'12,000',
       category: "Face Reading",
       img: FortuneBasket,
@@ -261,7 +261,7 @@ export const FortuneBasketData = [
     },
    {
       id:5,
-      price: "8,399",
+      price: "5,399",
       realPrice:'12,000',
       category: "Vedic Astrologer",
       img: FortuneBasket,
@@ -270,7 +270,7 @@ export const FortuneBasketData = [
     },
    {
       id:6,
-      price: "8,399",
+      price: "6,399",
       realPrice:'12,000',
       category: "Vedic Astrologer",
       img: FortuneBasket,
@@ -279,7 +279,7 @@ export const FortuneBasketData = [
     },
    {
       id:7,
-      price: "8,399",
+      price: "7,399",
       realPrice:'12,000',
       category: "Palmistry",
       img: FortuneBasket,
@@ -297,7 +297,7 @@ export const FortuneBasketData = [
     },
    {
       id:9,
-      price: "8,399",
+      price: "9,399",
       realPrice:'12,000',
       category: "Face Reading",
       img: FortuneBasket,
@@ -306,7 +306,7 @@ export const FortuneBasketData = [
     },
    {
       id:10,
-      price: "8,399",
+      price: "1,399",
       realPrice:'12,000',
       category: "Face Reading",
       img: FortuneBasket,
@@ -319,7 +319,7 @@ export const FortuneBasketData = [
       realPrice:'12,000',
       category: "Palmistry",
       img: FortuneBasket,
-        title: "7 Mukhi Rudraksha ",
+        title: "7 Mukhi Rudraksha  ",
       desc:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est incidunt fuga odit recusandae aliquid aut nostrum placeat exercitationem, laborum quidem quasi. Vero quibusdam ullam numquam reiciendis porro, omnis consequuntur adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, voluptatem quis fugit labore velit ex doloremque, adipisci, voluptate illum iste modi. Rem molestias ab harum sint beatae error aliquam dolorum. '
     }
 ]

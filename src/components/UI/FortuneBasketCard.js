@@ -18,7 +18,7 @@ const FortuneBasketCard = ({item}) => {
             
             </div>
             <div className='flex items-cetner '>
-                <div className='text-[16px] me-3'>₹8,399 </div>
+                <div className='text-[16px] me-3'>{item.price} </div>
                 <div className='text-gray-500 text-[12px] content-center line-through'>  ₹12,200</div>
             </div>
 
@@ -29,7 +29,7 @@ const FortuneBasketCard = ({item}) => {
                 style={{ fontFamily: 'Lora, serif' }}
             >
                <NavLink className="  no-underline text-white"
-                        to={`${item.id}`} state={item}>
+                        to={`/shop/${item.id}`} state={item}>
                             Order Now
                     </NavLink> 
             </button>

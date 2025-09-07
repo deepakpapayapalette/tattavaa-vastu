@@ -1,6 +1,6 @@
 import Carousel from 'react-multi-carousel';
 
-export default function NewsArticleSlider({ newsArticleData }) {
+export default function RelatedNews({ relatedNewData }) {
     const responsive = {
         superLargeDesktop: {
             breakpoint: { max: 4000, min: 3000 },
@@ -26,11 +26,11 @@ export default function NewsArticleSlider({ newsArticleData }) {
         <>
             <Carousel
                 removeArrowOnDeviceType={["tablet", "mobile"]}
-                arrows={false}
+                arrows={true}
                 responsive={responsive}
-                // autoPlay={false}
-                // autoPlaySpeed={3000}
-                // transitionDuration={2000} 
+                autoPlay={true}
+                autoPlaySpeed={4000}
+                transitionDuration={3000} 
                 //additionalTransfrom={-20}
                 //  pauseOnHover={false} 
                 //  centerMode={false}
@@ -43,7 +43,7 @@ export default function NewsArticleSlider({ newsArticleData }) {
                 className='ps-0 pb-2'
 
             >
-                {newsArticleData.map((item) => {
+                {relatedNewData.map((item) => {
                     return (
                         <>
                             <div key={item.id}>
@@ -65,8 +65,8 @@ export default function NewsArticleSlider({ newsArticleData }) {
                                         </div> 
                                     </div>
                                     <div className="">
-                                        <button
-                                            className=" text-[18px] hover:text-[#cda202] transition-shadow hover:underline" 
+                                        <button className=" text-[18px] hover:text-[#cda202] transition-shadow"
+
                                         >
                                             Read More
                                         </button>

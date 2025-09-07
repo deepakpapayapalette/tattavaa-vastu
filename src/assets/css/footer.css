@@ -6,7 +6,7 @@
 .footer-link {
   color: #000;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .footer-link:hover {
@@ -20,7 +20,8 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: #8a6e00; /* mustard brown */
+  background: #8a6e00;
+  /* mustard brown */
   color: #fff;
   font-size: 16px;
   transition: 0.3s;
@@ -32,6 +33,11 @@
 }
 
 .footer-bottom {
-  background: #6b5700; /* dark brown */
+  background: #6b5700;
+  /* dark brown */
   color: #fff;
+}
+
+footer ul li {
+  padding: 8px 0;
 }

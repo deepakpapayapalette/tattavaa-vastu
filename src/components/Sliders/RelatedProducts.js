@@ -1,7 +1,9 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import { NavLink } from 'react-router-dom';
-const FortuneBasketSlider = ({filteredData}) => {
+const RelatedProducts = ({ relatedProductsData }) => {
+    
+
 
            const responsive = {
         superLargeDesktop: {
@@ -43,7 +45,7 @@ const FortuneBasketSlider = ({filteredData}) => {
                       partialVisible={true} 
                       className='ps-0'
                       >
-                      {filteredData.map((item) => {
+                      {relatedProductsData.map((item) => {
                           return (  
                               <div className="" key={item.id}>
                                   <div className="p-[20px] rounded-xl overflow-hidden hover:shadow-sm second-bg">
@@ -67,10 +69,11 @@ const FortuneBasketSlider = ({filteredData}) => {
                                  
                                       </div>
                                       <div className="">
+        
                                              <NavLink className="  first-btn"
-                        to={`shop/${item.id}`} state={item}>
-                            Order Now
-                    </NavLink> 
+                                                to={`/shop/${item.id}`} state={item}>
+                                                    Order Now
+                                            </NavLink> 
                                       </div>
                                   </div>
                     
@@ -82,4 +85,4 @@ const FortuneBasketSlider = ({filteredData}) => {
   )
 }
 
-export default FortuneBasketSlider
+export default RelatedProducts

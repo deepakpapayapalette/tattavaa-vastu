@@ -3,15 +3,10 @@
 import { useState } from 'react';
 import { cardsData } from '../../data/LocalData';
 import { FaArrowRightLong } from "react-icons/fa6";
-import astrologer from '../../assets/images/astrologer.png';
-import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-
-import GuidedMasterCard from '../UI/GuidedByMasterCard';
 import GuideMasterSlider from '../Sliders/GuideMasterSlider';
 import { NavLink } from 'react-router-dom';
 // import AstrologerCard from '../UI/AstrologerCard';
-
 
 const GuideMaster = () => {
     
@@ -40,7 +35,7 @@ const GuideMaster = () => {
                     <div className='col-lg-3 col-12 d-flex justify-content-lg-end'>
                         <button className="btn mb-3 mb-lg-0 flex items-center" 
                           >
-                              <NavLink className="no-underline text-dark" to="/guided-by-masters">
+                              <NavLink className="no-underline text-gray-900 hover:text-yellow-600" to="/guided-by-masters">
                                   
                          View All <FaArrowRightLong className='ms-2 d-inline'  />
                               </NavLink>

@@ -95,15 +95,15 @@ const ContactUs = () => {
                         <a href="mailto:rjvisj42@gmail.com" className="no-underline text-white">rjvisj42@gmail.com</a> 
                       </div> 
                     </div>  
-                    <div className=" mt-lg-5 mt-4 address-block">
-                      <div className="flex items-center mb-2">
-                        <CiLocationOn className="me-1" size={24} />
-                        <h5 className="text-white lg:text-[24px mb-0"> Address</h5>
-                      </div>
-                    <p className="text-white ">
-                      H-Block, Sector-63, Noida, Uttar Pradesh,  201301, India
-                    </p> 
-                    </div> 
+                      <div className=" mt-lg-5 mt-4 address-block">
+                        <div className="flex items-center mb-2">
+                          <CiLocationOn className="me-1" size={24} />
+                          <h5 className="text-white lg:text-[24px mb-0"> Address</h5>
+                        </div>
+                      <p className="text-white ">
+                        H-Block, Sector-63, Noida, Uttar Pradesh,  201301, India
+                      </p> 
+                      </div> 
              
                          <div className="mt-lg-5 mt-4">
                                 <h5 className=" mb-3 text-white lg:text-[24px]">Follow Us</h5>

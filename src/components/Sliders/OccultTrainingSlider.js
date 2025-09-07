@@ -1,6 +1,8 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import { NavLink } from 'react-router-dom';
+import { HiArrowSmallRight } from "react-icons/hi2";
+
 const OccultTrainingSlider = ({filteredData}) => {
                const responsive = {
         superLargeDesktop: {
@@ -14,7 +16,7 @@ const OccultTrainingSlider = ({filteredData}) => {
         },
         tablet: {
             breakpoint: { max: 1024, min: 767 },
-            items: 3,
+            items: 2,
                  partialVisibilityGutter: 20
         },
         mobile: {
@@ -73,8 +75,8 @@ const OccultTrainingSlider = ({filteredData}) => {
                     {/* Button Section */}
                     <div className="flex justify-between items-center pt-2">
                       <span></span>
-                      <NavLink to="/enroll" className="text-black no-underline font-medium flex items-center gap-1 hover:text-yellow-600">
-                        Enroll Now →
+                      <NavLink to="/enroll" className="text-gray-900 no-underline font-medium flex items-center gap-1 hover:underline hover:text-yellow-600">
+                        Enroll Now <HiArrowSmallRight />
                       </NavLink>
                     </div>
                   </div>
