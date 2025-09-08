@@ -14,11 +14,20 @@ const About = () => {
             </h2>
             <p>Blending ancient occult sciences with modern guidance to bring clarity, balance, and prosperity into everyday life.</p>
             </div>
-        </div> 
+        </div>
       </section>
       <OurStory/>
       <AboutSection2/>
-      <MeetExperts/>
+      <MeetExperts />
+      <div>
+        <div className="about-title">
+          <h2 className='text-lora font-semibold'>
+            About Us
+          </h2>
+          <p>Blending ancient occult sciences with modern guidance to bring clarity, balance, and prosperity into everyday life.</p>
+        </div>
+
+      </div>
     </>
   )
 }

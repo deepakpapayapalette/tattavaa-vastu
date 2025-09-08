@@ -1,5 +1,6 @@
 import React from 'react'
 import astrologer from '../../assets/images/astrologer.png';
+import { NavLink } from 'react-router-dom';
 const GuidedByMasterCard = () => {
   return (
     <>
@@ -29,13 +30,13 @@ const GuidedByMasterCard = () => {
 
         </div>
         <div className="">
-            <button className="py-3 px-4 text-[18px] w-full main-bg hover:shadow-md text-white font-medium   rounded-lg transition"
-                style={{ fontFamily: 'Lora, serif' }}
+            <NavLink className="first-btn"
+             to="/consult"
             >
                 Book a Consultation
-            </button>
+            </NavLink>
         </div>
-    </div> 
+    </div>
     </>
   )
 }

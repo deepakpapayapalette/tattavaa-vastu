@@ -14,21 +14,21 @@ import { NavLink } from 'react-router-dom';
 
 
 const FortuneBasket = () => {
-    
+
     //   const [activeCategory, setActiveCategory] = useState("Vedic Astrologer");
-    //   const filteredCards = activeCategory === "all" ? FortuneBasketData : FortuneBasketData.filter((card) => card.category === activeCategory); 
-      
+    //   const filteredCards = activeCategory === "all" ? FortuneBasketData : FortuneBasketData.filter((card) => card.category === activeCategory);
+
 //     const categories = [
 //     { key: "Vedic Astrologer", label: "Vedic Astrologer" },
 //     { key: "Palmistry", label: "Palmistry" },
 //     { key: "Face Reading", label: "Face Reading" },
-//     { key: "Numerology Astrologer", label: "Numerology Astrologer" }, 
+//     { key: "Numerology Astrologer", label: "Numerology Astrologer" },
 //   ];
 
 
   return (
-    <> 
-    <section className='space-top'> 
+    <>
+    <section className='space-top'>
         <div className="container">
                 <div className="row">
                     <div className="col-lg-9 col-12 mb-3 mb-lg-0">
@@ -39,15 +39,15 @@ const FortuneBasket = () => {
                     </div>
                     <div className='col-lg-3 col-12 d-flex justify-content-lg-end'>
                           <button className="btn mb-3 mb-lg-0 flex items-center"  >
-                              <NavLink className="no-underline text-dark" to="/shop"> 
+                              <NavLink className="no-underline text-gray-900 hover:text-[#cda202] hover:underline" to="/shop">
                                   View All <FaArrowRightLong className='ms-2 d-inline' />
                               </NavLink>
                           </button>
                     </div>
-                </div> 
+                </div>
             {/* <div className="row">
                 <div className="col-12 d-flex ">
-                    <div className=" medical-tab-buttons mb-4 flex flex-wrap gap-3"> 
+                    <div className=" medical-tab-buttons mb-4 flex flex-wrap gap-3">
                          {categories.map((cat) => (
                             <button key={cat.key}
                             className={`cutom-tab-style py-[8px] px-[15px] rounded-lg text-[14px] ${activeCategory === cat.key ? "bg-[#faf6e6]" : ""}`}
@@ -59,12 +59,12 @@ const FortuneBasket = () => {
           ))}
 
                     </div>
-                </div> 
+                </div>
             </div> */}
 
-          <div className="row">  
+          <div className="row">
                 <FortuneBasketSlider filteredData={FortuneBasketData} />
-          </div> 
+          </div>
         </div>
     </section>
     </>

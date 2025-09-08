@@ -1,203 +1,203 @@
 :root {
-    --primary-color: #CDA202;
-    --secondary-color: #faf6e6;
+  --primary-color: #CDA202;
+  --secondary-color: #faf6e6;
 
 }
 
 header nav a,
 header nav span {
-    color: #808080;
-    text-decoration: none;
-    font-size: 14px;
-    /* font-weight: 500; */
+  color: #808080;
+  text-decoration: none;
+  font-size: 14px;
+  /* font-weight: 500; */
 }
 
 header {
-    /* padding: 10px 0; */
-    position: sticky;
-    top: 0;
-    z-index: 99;
+  /* padding: 10px 0; */
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
 
 header .login-btn {
-    border: 1px solid #cda202;
-    background: none;
-    color: #cda202;
-    padding: 9px 36px;
+  border: 1px solid #cda202;
+  background: none;
+  color: #cda202;
+  padding: 9px 36px;
 }
 
 /* import Lora font form assets fonts folder */
 @font-face {
-    font-family: 'Lora';
-    src: url('../../assets/fonts/lora.regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Lora';
+  src: url('../../assets/fonts/lora.regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 div#navbarNav ul {
-    animation: growDown 400ms ease-in-out forwards;
-    transform-origin: top center;
+  animation: growDown 400ms ease-in-out forwards;
+  transform-origin: top center;
 }
 
 #navbarNav ul li:hover>a {
 
-    color: var(--primary-color);
+  color: var(--primary-color);
 
 
 }
 
 #navbarNav ul li a {
-    font-weight: 600;
-    color: #7f7f7f;
-    font-size: 14px;
+  font-weight: 600;
+  color: #7f7f7f;
+  font-size: 14px;
 }
 
 #navbarNav ul li:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 @keyframes growDown {
-    0% {
-        transform: scaleY(0)
-    }
+  0% {
+    transform: scaleY(0)
+  }
 
-    80% {
-        transform: scaleY(1.1)
-    }
+  80% {
+    transform: scaleY(1.1)
+  }
 
-    100% {
-        transform: scaleY(1)
-    }
+  100% {
+    transform: scaleY(1)
+  }
 }
 
 @keyframes mations {
-    from {
-        transform: translateY(-100%)
-    }
+  from {
+    transform: translateY(-100%)
+  }
 
-    to {
-        transform: translateY(0)
-    }
+  to {
+    transform: translateY(0)
+  }
 }
 
 @-moz-keyframes mations {
-    from {
-        transform: translateY(-100%)
-    }
+  from {
+    transform: translateY(-100%)
+  }
 
-    to {
-        transform: translateY(0)
-    }
+  to {
+    transform: translateY(0)
+  }
 }
 
 @-webkit-keyframes mations {
-    from {
-        transform: translateY(-100%)
-    }
+  from {
+    transform: translateY(-100%)
+  }
 
-    to {
-        transform: translateY(0)
-    }
+  to {
+    transform: translateY(0)
+  }
 }
 
 @-o-keyframes mations {
-    from {
-        transform: translateY(-100%)
-    }
+  from {
+    transform: translateY(-100%)
+  }
 
-    to {
-        transform: translateY(0)
-    }
+  to {
+    transform: translateY(0)
+  }
 }
 
 header nav .collapse {
-    visibility: visible;
+  visibility: visible;
 }
 
 nav #navbarNav ul li .active {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 
 
 nav .service-dropdown {
-    position: absolute;
+  position: absolute;
 }
 
 .service-dropdown {
-    width: 500px;
-    background-color: #ffffff;
-    box-shadow: 0px 4px 5px rgb(178 178 178 / 20%);
-    padding: 10px 5px;
-    position: absolute;
-    border-radius: 0 0 10px 10px;
-    display: none;
+  width: 500px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 5px rgb(178 178 178 / 20%);
+  padding: 10px 5px;
+  position: absolute;
+  border-radius: 0 0 10px 10px;
+  display: none;
 }
 
 
 
-/* @media screen and (min-width:992px) {
-    .service-link:hover .service-dropdown {
-        display: block;
-    }
-} */
+@media screen and (min-width:1024px) {
+  .service-link:hover .service-dropdown {
+    display: block;
+  }
+}
 
 
 ul.service-inner-card {
-    display: grid;
-    grid-template-columns: 160px auto;
-    gap: 15px;
-    padding-left: 0;
-    padding: 10px 15px;
+  display: grid;
+  grid-template-columns: 160px auto;
+  gap: 15px;
+  padding-left: 0;
+  padding: 10px 15px;
 }
 
 @media screen and (max-width:1024px) {
-    nav .service-dropdown {
-        position: static;
-        box-shadow: none;
-    }
+  nav .service-dropdown {
+    position: static;
+    box-shadow: none;
+  }
 
-    ul.service-inner-card {
-        grid-template-columns: auto;
-    }
+  ul.service-inner-card {
+    grid-template-columns: auto;
+  }
 
-    .service-dropdown {
-        display: none;
-    }
+  .service-dropdown {
+    display: none;
+  }
 
 }
 
 .login-btn {
-    cursor: pointer;
-    padding: 12px 30px;
-    margin: 0;
-    position: relative;
-    display: inline-block;
-    /* border: 2px solid #cda301; */
-    border-radius: 8px;
-    overflow: hidden;
-    background: transparent;
-    transition: color 0.8s ease;
-    z-index: 1;
+  cursor: pointer;
+  padding: 12px 30px;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  /* border: 2px solid #cda301; */
+  border-radius: 8px;
+  overflow: hidden;
+  background: transparent;
+  transition: color 0.8s ease;
+  z-index: 1;
 }
 
 .login-btn::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(90deg, #cda301, #ecbe07, #937813);
-    transition: left 0.8s ease;
-    z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #cda301, #ecbe07, #937813);
+  transition: left 0.8s ease;
+  z-index: -1;
 }
 
 .login-btn:hover::after {
-    left: 0;
+  left: 0;
 
 }
 
 .login-btn:hover {
-    color: white;
+  color: white;
 }

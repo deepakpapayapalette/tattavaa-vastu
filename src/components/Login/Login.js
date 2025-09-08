@@ -29,7 +29,25 @@ export default function Login() {
         { value: "+49", label: "🇩🇪 +49" },
         { value: "+81", label: "🇯🇵 +81" }
     ];
-
+  const inputCustomStyle = {
+    "& .MuiOutlinedInput-root": {
+      "& fieldset": {
+        borderColor: "gray",
+      },
+      "&:hover fieldset": {
+        borderColor: "#000000",
+      },
+      "&.Mui-focused fieldset": {
+        borderColor: "#cda202",
+      },
+    },
+    "& .MuiInputLabel-root": {
+      color: "gray",
+    },
+    "& .MuiInputLabel-root.Mui-focused": {
+      color: "#cda202",
+    },
+  }
 
     return (
         <div className="  flex items-center justify-center pt-5 p-4">
@@ -63,7 +81,8 @@ export default function Login() {
                                         {countryOptions.map(el => <option value={el.value}>{el.value}</option>)}
 
                                     </select>,
-                                }}
+                  }}
+                  sx={inputCustomStyle}
                             />
                         </div>
                     </div>

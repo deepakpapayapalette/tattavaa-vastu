@@ -7,25 +7,26 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import 'react-multi-carousel/lib/styles.css';
 // import AstrologerCard from '../UI/AstrologerCard';
 import OccultTrainingSlider from '../Sliders/OccultTrainingSlider';
+import { NavLink } from 'react-router-dom';
 // import AstrologerCard from '../UI/AstrologerCard';
 
 
 const OccultTraining = () => {
-    
+
     //   const [activeCategory, setActiveCategory] = useState("Vedic Astrologer");
-    //   const filteredCards = activeCategory === "all" ? OccultClinicData : OccultClinicData.filter((card) => card.category === activeCategory); 
-      
+    //   const filteredCards = activeCategory === "all" ? OccultClinicData : OccultClinicData.filter((card) => card.category === activeCategory);
+
 //     const categories = [
 //     { key: "Vedic Astrologer", label: "Vedic Astrologer" },
 //     { key: "Palmistry", label: "Palmistry" },
 //     { key: "Face Reading", label: "Face Reading" },
-//     { key: "Numerology Astrologer", label: "Numerology Astrologer" }, 
+//     { key: "Numerology Astrologer", label: "Numerology Astrologer" },
 //   ];
 
 
   return (
-    <> 
-    <section className='space-top'> 
+    <>
+    <section className='space-top'>
         <div className="container">
                 <div className="row">
                     <div className="col-lg-9 col-12 mb-3 mb-lg-0">
@@ -35,16 +36,16 @@ const OccultTraining = () => {
                         </p>
                     </div>
                     <div className='col-lg-3 col-12 d-flex justify-content-lg-end'>
-                          <button className="btn mb-3 mb-lg-0 flex items-center"
-                            //   onClick={() => setActiveCategory("all")}
+                          <NavLink to="/training-classes" className="no-underline hover:underline text-gray-900 hover:text-[#cda202]  transition  "
+
                         >
                          View All <FaArrowRightLong className='ms-2 d-inline'  />
-                        </button>
+                        </NavLink>
                     </div>
-                </div> 
+                </div>
             <div className="row">
                 {/* <div className="col-12 d-flex ">
-                    <div className=" medical-tab-buttons mb-4 flex flex-wrap gap-3"> 
+                    <div className=" medical-tab-buttons mb-4 flex flex-wrap gap-3">
                          {categories.map((cat) => (
                             <button key={cat.key}
                             className={`cutom-tab-style py-[8px] px-[15px] rounded-lg text-[14px] ${activeCategory === cat.key ? "bg-[#cda202] text-white" : ""}`}
@@ -59,9 +60,9 @@ const OccultTraining = () => {
                 </div>  */}
             </div>
 
-          <div className="row">  
+          <div className="row">
                 <OccultTrainingSlider filteredData={OccultClinicData}  />
-          </div> 
+          </div>
         </div>
     </section>
     </>

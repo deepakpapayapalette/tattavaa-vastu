@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaArrowRightLong } from 'react-icons/fa6'
 import { NavLink } from 'react-router-dom'
 
 const TrainingClassesCard = ({TrainingClassesList}) => {
@@ -19,7 +20,7 @@ const TrainingClassesCard = ({TrainingClassesList}) => {
                 {/* Content Section */}
                 <div className="pt-3  ">
                   <h4 className="  text-[#000000] text-lora pb-2" >Numerology Class</h4>
-                  <div className='flex justify-between items-center'>
+                  <div className='flex justify-between items-end'>
 
 
                     <div className='space-y-1'>
@@ -28,11 +29,11 @@ const TrainingClassesCard = ({TrainingClassesList}) => {
                     </div>
 
                     {/* Button Section */}
-                    <div className="flex justify-between items-center pt-2">
-                      <NavLink to="/enroll" className="text-black no-underline font-medium flex items-center gap-1 hover:text-yellow-600">
-                        Enroll Now →
-                      </NavLink>
-                    </div>
+                   <button className=" flex items-end"  >
+                                                <NavLink className="no-underline text-gray-900 hover:text-[#cda202] hover:underline" to="/shop">
+                                                    Enroll Now<FaArrowRightLong className='ms-1 d-inline' />
+                                                </NavLink>
+                                            </button>
                   </div>
                 </div>
               </div>

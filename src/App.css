@@ -81,7 +81,7 @@ header .active {
 .second-btn {
   text-decoration: none;
   cursor: pointer;
-  padding: 12px 30px;
+  padding: 16px 30px;
   margin: 0;
   position: relative;
   display: inline-block;
@@ -93,6 +93,7 @@ header .active {
   z-index: 1;
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
+
 }
 
 .second-btn::after {

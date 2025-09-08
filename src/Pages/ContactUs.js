@@ -56,6 +56,26 @@ const ContactUs = () => {
     }
   };
 
+  const inputCustomStyle = {
+    "& .MuiOutlinedInput-root": {
+      "& fieldset": {
+        borderColor: "gray",
+      },
+      "&:hover fieldset": {
+        borderColor: "#000000",
+      },
+      "&.Mui-focused fieldset": {
+        borderColor: "#cda202",
+      },
+    },
+    "& .MuiInputLabel-root": {
+      color: "gray",
+    },
+    "& .MuiInputLabel-root.Mui-focused": {
+      color: "#cda202",
+    },
+  }
+
   return (
     <>
       <section className='space-top md:mb-[36px]'>
@@ -73,58 +93,58 @@ const ContactUs = () => {
       <section>
         <div className="contact-section py-5">
           <div className="container">
-            <div className="row g-4 align-items-center"> 
+            <div className="row g-4 align-items-center">
               <div className="col-md-6">
                 <div className={`relative contact-info-card lg:p-[25px] rounded text-white bg-no-repeat`}
                   style={{ backgroundImage: `url(${contactBg})` }}
-                  >
-                  <div style={{ }} className="overlay-contact">
-                    <div className="lg:flex justify-between "> 
-                      <div className="contact-group mb-4 mb-xl-0"> 
-                      <div className="flex ">
-                        <MdOutlinePhoneInTalk size={24} className="me-2" />
-                        <h5 className="text-white lg:text-[24px]"> Phone Number</h5>
+                >
+                  <div style={{}} className="overlay-contact">
+                    <div className="lg:flex justify-between ">
+                      <div className="contact-group mb-4 mb-xl-0">
+                        <div className="flex ">
+                          <MdOutlinePhoneInTalk size={24} className="me-2" />
+                          <h5 className="text-white lg:text-[24px]"> Phone Number</h5>
                         </div>
-                      <a className="text-white no-underline" href="tel:5252525252" >+91 5252525252</a>
-                      </div> 
-                      <div className="contact-group"> 
+                        <a className="text-white no-underline" href="tel:5252525252" >+91 5252525252</a>
+                      </div>
+                      <div className="contact-group">
                         <div className="flex">
-                            <MdOutlineEmail size={24} className="me-2" />
-                             <h5 className="text-white lg:text-[24px]">   Email ID</h5>
+                          <MdOutlineEmail size={24} className="me-2" />
+                          <h5 className="text-white lg:text-[24px]">   Email ID</h5>
                         </div>
-                        <a href="mailto:rjvisj42@gmail.com" className="no-underline text-white">rjvisj42@gmail.com</a> 
-                      </div> 
-                    </div>  
-                      <div className=" mt-lg-5 mt-4 address-block">
-                        <div className="flex items-center mb-2">
-                          <CiLocationOn className="me-1" size={24} />
-                          <h5 className="text-white lg:text-[24px mb-0"> Address</h5>
-                        </div>
+                        <a href="mailto:rjvisj42@gmail.com" className="no-underline text-white">rjvisj42@gmail.com</a>
+                      </div>
+                    </div>
+                    <div className=" mt-lg-5 mt-4 address-block">
+                      <div className="flex items-center mb-2">
+                        <CiLocationOn className="me-1" size={24} />
+                        <h5 className="text-white lg:text-[24px mb-0"> Address</h5>
+                      </div>
                       <p className="text-white ">
                         H-Block, Sector-63, Noida, Uttar Pradesh,  201301, India
-                      </p> 
-                      </div> 
-             
-                         <div className="mt-lg-5 mt-4">
-                                <h5 className=" mb-3 text-white lg:text-[24px]">Follow Us</h5>
-                                <div className="d-flex gap-3">
-                                    <a href="#">
-                                        <FaFacebookF size={18} color="#fff" /></a>
-                                    <a href="#">
-                                        <FaInstagram size={18} color="#fff" /></a>
-                                    <a href="#">
-                                        <FaLinkedinIn size={18} color="#fff" /></a>
-                                    <a href="#">
-                                        <FaTwitter size={18} color="#fff" /></a>
-                                    <a href="#">
-                                        <FaYoutube size={18} color="#fff" /></a>
-                                </div>
-                            </div>
+                      </p>
+                    </div>
+
+                    <div className="mt-lg-5 mt-4">
+                      <h5 className=" mb-3 text-white lg:text-[24px]">Follow Us</h5>
+                      <div className="d-flex gap-3">
+                        <a href="#">
+                          <FaFacebookF size={18} color="#fff" /></a>
+                        <a href="#">
+                          <FaInstagram size={18} color="#fff" /></a>
+                        <a href="#">
+                          <FaLinkedinIn size={18} color="#fff" /></a>
+                        <a href="#">
+                          <FaTwitter size={18} color="#fff" /></a>
+                        <a href="#">
+                          <FaYoutube size={18} color="#fff" /></a>
+                      </div>
+                    </div>
                   </div>
 
-            </div>
+                </div>
 
-              </div> 
+              </div>
               {/* Right Side - Form */}
               <div className="col-md-6">
                 <Paper
@@ -154,6 +174,7 @@ const ContactUs = () => {
                       margin="normal"
                       error={Boolean(errors.name)}
                       helperText={errors.name}
+                      sx={inputCustomStyle}
                     />
                     <TextField
                       fullWidth
@@ -164,6 +185,7 @@ const ContactUs = () => {
                       margin="normal"
                       error={Boolean(errors.email)}
                       helperText={errors.email}
+                      sx={inputCustomStyle}
                     />
                     <TextField
                       fullWidth
@@ -176,27 +198,28 @@ const ContactUs = () => {
                       rows={2}
                       error={Boolean(errors.message)}
                       helperText={errors.message}
+                      sx={inputCustomStyle}
                     />
                     <div>
-                      
-                 
+
+
                       <Button
                         className="text-lora lg:text-[18px]"
-                      type="submit"
-                      variant="contained"
-                      sx={{
-                        mt: 2,
-                        bgcolor: "#cda202",
-                        "&:hover": { bgcolor: "#a67c00" },
-                        borderRadius: "8px",
-                        textTransform: "none",
-                        padding:'12px'
-                      }}
-                      fullWidth
-                    >
-                      Send Message
+                        type="submit"
+                        variant="contained"
+                        sx={{
+                          mt: 2,
+                          bgcolor: "#cda202",
+                          "&:hover": { bgcolor: "#a67c00" },
+                          borderRadius: "8px",
+                          textTransform: "none",
+                          padding: '12px'
+                        }}
+                        fullWidth
+                      >
+                        Send Message
                       </Button>
-                       </div>
+                    </div>
                   </Box>
                 </Paper>
                 {/* {submittedData && (

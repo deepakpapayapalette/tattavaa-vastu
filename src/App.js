@@ -24,6 +24,7 @@ import ShopDetail from './components/DetailsPages/ShopDetail';
 import Login from './components/Login/Login';
 import EnrollmentForm from './components/EnrollmentForm/EnrollmentForm';
 import ConsultationForm from './components/ConsultationForm/ConsultationForm';
+import OrderForm from './components/CheckoutForm/CheckoutForm';
 // import ServiceDetail from './Pages/ServiceInnerPages/ServiceDetail';
 // import { getApi } from './API/GetApi';
 // import { ProductDetail } from './Components/UI/ProductDetail';
@@ -40,22 +41,22 @@ function App() {
         {
           path: '/',
           element: <Home/>
-       
+
         },
         {
           path: '/login',
           element: <Login/>
-       
+
         },
         {
           path: '/enroll',
           element: <EnrollmentForm/>
-       
+
         },
         {
           path: '/consult',
           element: <ConsultationForm/>
-       
+
         },
         {
           path: '/about',
@@ -78,6 +79,10 @@ function App() {
           element: <ShopDetail />,
         },
         {
+          path: '/order-page',
+          element: <OrderForm />,
+        },
+        {
           path: '/training-classes',
           element: <TrainingClasses />,
           // loader: getApi
@@ -93,7 +98,7 @@ function App() {
         {
           path: '/guided-by-masters',
           element: <GuidedMastersDetail />,
-  
+
         },
         {
           path: '/contact',

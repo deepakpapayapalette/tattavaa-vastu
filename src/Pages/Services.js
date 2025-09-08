@@ -15,7 +15,7 @@ const Services = () => {
                 <p className='mb-0'>
                     Explore our range of astrology, numerology, vastu, and occult solutions designed for harmony and growth
                 </p>
-                  </div> 
+                  </div>
                   <div className="row g-4">
                       {servicesData.map((service) => {
                           return (
@@ -36,10 +36,10 @@ const Services = () => {
                                   </div>
           )
                       })}
-                      
+
                   </div>
-                  
-        </div> 
+
+        </div>
       </section>
     </>
   )

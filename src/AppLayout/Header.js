@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom'
 
-import Logo from '../assets/images/logo.png'; 
+import Logo from '../assets/images/logo.png';
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
 import { GoTriangleDown } from "react-icons/go";
 import '../assets/css/Header.css'
+import { servicesData } from '../data/LocalData';
 const Header = () => {
 
   const [expanded, setExpanded] = useState(false);
@@ -20,7 +21,7 @@ const Header = () => {
     //     setScrollDown(false);
     //   }
     // };
-  // useEffect(() => { 
+  // useEffect(() => {
   //   window.addEventListener("scroll", handleScroll);
   //   return () => window.removeEventListener("scroll", handleScroll);
   // }, []);
@@ -32,7 +33,7 @@ const Header = () => {
 //       setScrollDown(false);
 //     }
   // };
-  
+
   const servicesList = [
   { id: 1, name: "Vastu For Home" },
   { id: 2, name: "Aroma Vastu" },
@@ -45,12 +46,12 @@ const Header = () => {
   { id: 9, name: "Color Therapy" },
   { id: 10, name: "Rudraksh Therapy" },
   ];
-  
+
   return (
     <>
-      <header> 
-      <nav className={`navbar navbar-expand-md navbar-light bg-white shadow-sm  main-navbar  
-          // scrollDown == true ? 'headerfix' : '' 
+      <header>
+      <nav className={`navbar navbar-expand-md navbar-light bg-white shadow-sm  main-navbar
+          // scrollDown == true ? 'headerfix' : ''
         `
       }
         id='mainNavbar'
@@ -58,9 +59,9 @@ const Header = () => {
       <div className="container">
           <div className="brand">
              <a className="navbar-brand d-flex align-items-center" href="/">
-              <img src={Logo} alt="Logo"  className="me-4" /> 
+              <img src={Logo} alt="Logo"  className="me-4" />
             </a>
-          </div> 
+          </div>
         <button
           className="navbar-toggler"
           type="button"
@@ -71,32 +72,32 @@ const Header = () => {
             aria-label="Toggle navigation"
             onClick={() => setExpanded(!expanded)}
           >
-            {expanded? <IoMdClose />:  <AiOutlineMenu />} 
-        </button> 
+            {expanded? <IoMdClose />:  <AiOutlineMenu />}
+        </button>
         {/* Menu */}
           <div className={`collapse navbar-collapse pb-3 pb-lg-0 ${expanded ? "show" : ""}`} id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li><NavLink onClick={handleClose} to="/"  className='nav-link ' >Home</NavLink></li>
             <li className="nav-item">  <NavLink onClick={handleClose} to="/about" className='nav-link '>About</NavLink> </li>
             <li className="nav-item relative  service-link ">
-                  <span className='dropdown-toggle flex items-center '>
-                  <NavLink to="/services" className='nav-link' onClick={handleClose}> 
+                  {/* <span className='dropdown-toggle flex items-center '> */}
+                  <NavLink to="/services" className='nav-link dropdown-toggle' onClick={handleClose}>
                   Service
-              </NavLink> 
-                </span> 
-            
+              </NavLink>
+                {/* </span> */}
+
               <div className="service-dropdown dropdown">
                 <ul className='service-inner-card'>
-                  {servicesList.map((el , i) => {
+                      {servicesList.map((service, i) => {
                     return (
-                  <li key={i}><NavLink to="/test"> 
-                      {el.name}
+                      <li key={i}>
+                        <NavLink to={`/services/${service.id}`} >
+                          {service.name}
                       </NavLink>
-                      </li>  
+                      </li>
                     )
                   })}
                 </ul>
-                {/* <GoTriangleDown /> */}
               </div>
             </li>
             <li className="nav-item"> <NavLink onClick={handleClose} to="/shop" className='nav-link'>Shop</NavLink>  </li>
@@ -109,11 +110,11 @@ const Header = () => {
           <div className="d-flex align-items-center gap-2 mb-lg-0 mb-3">
                    <NavLink to="/login" className='login-btn   rounded-md text-lora'>Login</NavLink>
           </div>
-            </div> 
+            </div>
       </div>
     </nav>
       </header>
-    
+
     </>
 
   );

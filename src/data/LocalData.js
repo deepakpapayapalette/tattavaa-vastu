@@ -143,13 +143,13 @@ export const cardsData = [
         title: "Neurology Research",
       desc:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est incidunt fuga odit recusandae aliquid aut nostrum placeat exercitationem, laborum quidem quasi. Vero quibusdam ullam numquam reiciendis porro, omnis consequuntur adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, voluptatem quis fugit labore velit ex doloremque, adipisci, voluptate illum iste modi. Rem molestias ab harum sint beatae error aliquam dolorum. '
     }
-] 
+]
 export const OccultClinicData = [
    {
         id: 1,
         img: OccultClinicImage,
       category: "Vedic Astrologer",
-    
+
          title: "7 Mukhi Rudraksha ",
       desc:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est incidunt fuga odit recusandae aliquid aut nostrum placeat exercitationem, laborum quidem quasi. Vero quibusdam ullam numquam reiciendis porro, omnis consequuntur adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, voluptatem quis fugit labore velit ex doloremque, adipisci, voluptate illum iste modi. Rem molestias ab harum sint beatae error aliquam dolorum. '
     },
@@ -230,7 +230,7 @@ export const FortuneBasketData = [
         realPrice:'12,000',
         img: FortuneBasket,
       category: "Vedic Astrologer",
-         title: "7 Mukhi Rudraksha ", 
+         title: "7 Mukhi Rudraksha ",
       desc:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est incidunt fuga odit recusandae aliquid aut nostrum placeat exercitationem, laborum quidem quasi. Vero quibusdam ullam numquam reiciendis porro, omnis consequuntur adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, voluptatem quis fugit labore velit ex doloremque, adipisci, voluptate illum iste modi. Rem molestias ab harum sint beatae error aliquam dolorum. '
     },
    {
@@ -417,12 +417,12 @@ export const servicesData = [
   {
     id: 5,
     img: service5,
-    title: "Numerology (Name, Business & Mobile)",
+    title: 'Aroma Vastu',
   },
   {
     id: 6,
     img: service6,
-    title: 'Aroma Vastu',
+    title: "Numerology (Name, Business & Mobile)",
   },
   {
     id: 7,

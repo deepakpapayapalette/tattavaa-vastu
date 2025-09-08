@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import {TextField,  Button, IconButton } from "@mui/material";
+import {TextField,  Button, IconButton, InputLabel, Select, MenuItem } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+import FormControl from '@mui/material/FormControl';
 
 export default function EnrollmentForm() {
     const navigateBack = useNavigate();
@@ -12,7 +13,7 @@ export default function EnrollmentForm() {
         email: "",
         language: ""
     });
-    console.log(formData)
+
     const [countryCode, setCountryCode] = useState("+91");
     const [errors, setErrors] = useState({});
     const [isFormValid, setIsFormValid] = useState(false);
@@ -128,14 +129,33 @@ export default function EnrollmentForm() {
         { value: "+81", label: "🇯🇵 +81" }
     ];
 
+    const inputCustomStyle = {
+    "& .MuiOutlinedInput-root": {
+      "& fieldset": {
+        borderColor: "gray",
+      },
+      "&:hover fieldset": {
+        borderColor: "#000000",
+      },
+      "&.Mui-focused fieldset": {
+        borderColor: "#cda202",
+      },
+    },
+    "& .MuiInputLabel-root": {
+      color: "gray",
+    },
+    "& .MuiInputLabel-root.Mui-focused": {
+      color: "#cda202",
+    },
+  }
     return (
         <div className="min-h-screen  flex items-center justify-center p-4">
             <div className="bg-white rounded-lg border w-full max-w-md overflow-hidden">
                 {/* Header */}
                 <div className="bg-[#CDA202] text-white px-6 py-3 flex items-center justify-between">
                     <h4 className="lg:text-[24px] text-lora">Filled This form For Enrollment</h4>
-                    {/* <X 
-            className="w-5 h-5 cursor-pointer hover:opacity-80" 
+                    {/* <X
+            className="w-5 h-5 cursor-pointer hover:opacity-80"
             onClick={handleClose}
           /> */}
 
@@ -157,6 +177,7 @@ export default function EnrollmentForm() {
                             onChange={(e) => handleInputChange('name', e.target.value)}
                             margin="normal"
                             variant="outlined"
+                            sx={inputCustomStyle}
                         />
                         {errors.name && (
                             <p className="text-red-500 text-sm mt-1 flex items-center">
@@ -179,6 +200,7 @@ export default function EnrollmentForm() {
                             onChange={(e) => handleInputChange("phone", e.target.value)}
                             margin="normal"
                             variant="outlined"
+                            sx={inputCustomStyle}
                             InputProps={{
                                 startAdornment: (
                                     <select
@@ -217,7 +239,7 @@ export default function EnrollmentForm() {
                             onChange={(e) => handleInputChange('email', e.target.value)}
                             margin="normal"
                             variant="outlined"
-
+                            sx={inputCustomStyle}
                         />
                         {errors.email && (
                             <p className="text-red-500 text-sm mt-1 flex items-center">
@@ -229,41 +251,60 @@ export default function EnrollmentForm() {
                         )}
                     </div>
 
-                    {/* Language Field */}
-                    <div className="mb-6">
+            {/* Language Field */}
 
+                    <div className="mb-6">
                         <div className="relative">
-                            <select
-                                value={formData.language}
-                                onChange={(e) => handleInputChange('language', e.target.value)}
-                                className={`w-full appearance-none px-4 py-3 border rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 cursor-pointer ${errors.language ? 'border-red-500' : formData.language ? 'border-green-500' : 'border-gray-300'
-                                    }`}
+                         <FormControl fullWidth margin="normal" error={!!errors.language}>
+                            <InputLabel id="language-label">Language</InputLabel>
+                            <Select
+                              labelId="language-label"
+                              label="Language"
+                              value={formData.language}
+                              onChange={(e) => handleInputChange("language", e.target.value)}
+                              sx={{
+                                    "& .MuiOutlinedInput-notchedOutline": {
+                                      borderColor: "gray", // default border
+                                    },
+                                    "&:hover .MuiOutlinedInput-notchedOutline": {
+                                      borderColor: "#cda202", // hover border
+                                    },
+                                    "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                                      borderColor: "#cda202", // focus border
+                                    },
+                                    "& .MuiSelect-select": {
+                                      color: "black", // text color
+                                      fontWeight: "500",
+                                    },
+                                    "& .MuiSvgIcon-root": {
+                                      color: "#cda202",
+                                }
+                                  }}
                             >
-                                <option value="" disabled>Choose Language</option>
-                                {languages.map((lang) => (
-                                    <option key={lang.value} value={lang.label}>
-                                        {lang.label}
-                                    </option>
-                                ))}
-                            </select>
-                            <svg
-                                className="absolute right-4 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                            >
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </div> 
-                        {errors.language && (
+                              <MenuItem value="" disabled>
+                                Choose Language
+                              </MenuItem>
+                              {languages.map((lang) => (
+                                <MenuItem key={lang.value} value={lang.value}>
+                                  {lang.label}
+                                </MenuItem>
+                              ))}
+                            </Select>
+                            {errors.language && (
+                              <p className="text-red-500 text-sm mt-1">{errors.language}</p>
+                            )}
+                          </FormControl>
+
+                        </div>
+                        {/* {errors.language && (
                             <p className="text-red-500 text-sm mt-1 flex items-center">
                                 <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
                                     <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
                                 </svg>
                                 {errors.language}
                             </p>
-                        )}
-                    </div> 
+                        )} */}
+                    </div>
                     <Button
                         onClick={handleSubmit}
                         fullWidth
@@ -279,7 +320,7 @@ export default function EnrollmentForm() {
                     //   disabled={!isFormValid}
                     >
                         Request a call back
-                    </Button> 
+                    </Button>
                 </div>
             </div>
         </div>
