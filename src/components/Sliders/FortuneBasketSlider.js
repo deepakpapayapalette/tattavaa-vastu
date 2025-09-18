@@ -3,14 +3,14 @@ import Carousel from 'react-multi-carousel';
 import { NavLink } from 'react-router-dom';
 const FortuneBasketSlider = ({filteredData}) => {
 
-           const responsive = {
+    const responsive = {
         superLargeDesktop: {
             breakpoint: { max: 4000, min: 3000 },
             items: 4
         },
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 4, 
+            items: 4,
              partialVisibilityGutter: 20
         },
         tablet: {
@@ -20,31 +20,31 @@ const FortuneBasketSlider = ({filteredData}) => {
         mobile: {
             breakpoint: { max: 767, min: 0 },
             items: 1,
-           
+
         }
     };
   return (
     <>
          <Carousel
                       //   removeArrowOnDeviceType={["tablet", "mobile"]}
-                        arrows={false} 
+                        arrows={false}
                       responsive={responsive}
                       // autoPlay={false}
                       // autoPlaySpeed={3000}
-                      // transitionDuration={2000} 
+                      // transitionDuration={2000}
                       //additionalTransfrom={-20}
-                      //  pauseOnHover={false} 
+                      //  pauseOnHover={false}
                       //  centerMode={false}
-                      containerClass=" carousel-container" 
-                      itemClass="pe-md-3 px-1"  
+                      containerClass=" carousel-container"
+                      itemClass="pe-md-3 px-1"
                       showDots={false}
-                      infinite={true}  
-                      renderDotsOutside={true} 
-                      partialVisible={true} 
+                      infinite={true}
+                      renderDotsOutside={true}
+                      partialVisible={true}
                       className='ps-0'
                       >
                       {filteredData.map((item) => {
-                          return (  
+                          return (
                               <div className="" key={item.id}>
                                   <div className="p-[20px] rounded-xl overflow-hidden hover:shadow-sm second-bg">
                                       <img
@@ -55,28 +55,28 @@ const FortuneBasketSlider = ({filteredData}) => {
                                       <div className="py-4 px-1">
                                           <div className="flex  items-start">
                                               <h4 className="  text-gray-900 font-semibold mb-2" style={{ fontFamily: 'Lora, serif' }}>
-                                              7 Mukhi Rudraksha 
+                                              7 Mukhi Rudraksha
                                               </h4>
-                                        
+
                                           </div>
                                           <div className='flex items-cetner '>
                                               <div className='text-[16px] me-3'>{ item.price}</div>
                                             <div className='text-gray-500 text-[12px] content-center line-through'>  ₹12,200</div>
                                           </div>
-                                          
-                                 
+
+
                                       </div>
                                       <div className="">
                                              <NavLink className="  first-btn"
                         to={`shop/${item.id}`} state={item}>
                             Order Now
-                    </NavLink> 
+                    </NavLink>
                                       </div>
                                   </div>
-                    
+
                               </div>
                               )
-                          })} 
+                          })}
                       </Carousel>
     </>
   )
