@@ -20,7 +20,6 @@ import Testimonials2 from '../components/Home/Testimonials2'
 const Home = () => {
   return (
     <>
-      
      <HeroBanner />
      <VastuGuides />
      <GuideMaster />
